@@ -142,6 +142,7 @@
     grid-area: bottom;
     width: 100%;
     padding: 0.4rem 0.8rem 0.1rem 0.8rem;
+    overflow-y: scroll;
   }
 
   .title {
@@ -152,7 +153,7 @@
 
   .ratingchild h2,
   .indexofAchild p {
-    background-color: rgb(0, 0, 0);
+    background-color: rgba(255, 255, 255, 0.054);
     width: 99.9%;
     height: 98%;
     border-radius: 0.2rem;
@@ -162,7 +163,7 @@
     font-weight: 300;
   }
 
-  .star-rating {
+  /* .star-rating {
     direction: rtl;
     display: inline-flex;
     font-size: 30px;
@@ -177,7 +178,19 @@
   
   .star-rating .selected{
     color: gold;
+  } */
+
+  .star {
+    font-size: 2rem;
+    color: #ccc;
   }
+  
+  .star.filled {
+    color: gold;
+  }
+  
+  
+
 
   .titlechild h1 {
     padding: 0.2rem 0rem 0rem 0rem;
@@ -193,15 +206,18 @@
     grid-area: egg;
     background-color: hsl(0, 0%, 7%);
     height: 22rem;
+    padding-top: 2rem;
   }
   
   
   .easter-eggs h1 {
-    background-color: hsl(120, 100%, 69%);
+    color: hsl(120, 100%, 69%);
+    background-color: hsla(0, 0%, 79%, 0.127);
+    border-radius: 0 1rem 1rem 0;
     font-family: "Poppins" , sans-serif;
     font-weight: 500;
     padding-left: 0.3rem;
-    
+    width: 13.5rem;
   }
   
   .part-child-ARP {
@@ -264,4 +280,9 @@
   .ani-foot h3,.ani-foot a {
     color: aliceblue;
     margin-top: 3rem;
+  }
+
+  .indexofA .star-rating {
+    position: sticky;
+    top: 0px;
   }

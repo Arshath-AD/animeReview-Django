@@ -96,7 +96,7 @@ let page = 1;
 
 function showNext(...pages) {
   const elements = pages
-    .map((p) => document.querySelector(`.${p}`))
+    .map((p) => document.querySelector(`#${p}`))
     .filter((el) => el);
 
   elements.forEach((el) => (el.style.display = "none"));
@@ -111,7 +111,7 @@ function showNext(...pages) {
 
 function showPrevious(...pages) {
   const elements = pages
-    .map((p) => document.querySelector(`.${p}`))
+    .map((p) => document.querySelector(`#${p}`))
     .filter((el) => el);
 
   if (elements.length === 0) {

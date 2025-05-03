@@ -1,64 +1,26 @@
-// Function to get URL parameter
-function getAnimeFromURL() {
-  const urlParams = new URLSearchParams(window.location.search);
-  return urlParams.get("anime"); // Return 'anime' parameter from the URL
-}
+fetch("/static/myapp/Data/action-packed-adventure.json")
+  .then(response => response.json())
+  .then(data => {
+    const animer = data.find(a => a.id === animeId);
+    const ratingpoint = animer.rating/2;
 
-document.addEventListener("DOMContentLoaded", () => {
-  // Get the anime ID from the URL
-  const animeId = getAnimeFromURL();
+    document.querySelectorAll('.star-rating').forEach(container => {
+      const stars = container.querySelectorAll('.star');
 
-  // Fetch the anime data from the JSON file
-  fetch("../Data/data.json")
-    .then((response) => response.json())
-    .then((data) => {
-      const anime = data.find((anime) => anime.id === animeId);
+      const fullStars = Math.floor(ratingpoint);
+      const hasHalf = ratingpoint - fullStars >= 0.5;
 
-      if (anime) {
-        // Populate the page with the anime details
-        document.querySelector(".title h1").textContent = anime.title;
-        document.querySelector(".indexofAchild p").textContent =
-          anime.description;
-        document.querySelector(".ratingchild h2").textContent = anime.rating;
-
-        // Populate the images
-        const imageContainer = document.querySelector(".imgsrev");
-        imageContainer.innerHTML = ""; // Clear existing images
-        anime.images.forEach((imgSrc) => {
-          const imgElement = document.createElement("img");
-          imgElement.src = imgSrc;
-          imgElement.classList.add("img-rev");
-          imageContainer.appendChild(imgElement);
-        });
-      } else {
-        console.error("Anime not found.");
-      }
-    })
-    .catch((error) => console.error("Error fetching anime data:", error));
-});
-
-
-// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-// Star rating
-// -=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=
-
-const stars = document.querySelectorAll('.star-rating .star');
-
-stars.forEach((star) => {
-  star.addEventListener('click', () => {
-    stars.forEach(s => s.classList.add('selected'));
-    star.classList.remove('selected');
-    let prev = star.previousElementSibling;
-    console.log(prev)
-    while (prev) {
-      prev.classList.remove('selected');
-      prev = prev.previousElementSibling;
-    }
-
-    const rating = star.getAttribute('data-value');
-    console.log('Selected Rating:', rating); // You can save this to DB or display it
+      stars.forEach((star, index) => {
+        if (index < fullStars) {
+          star.classList.add('filled');
+        } else if (index === fullStars && hasHalf) {
+          star.innerHTML = '&#9733;'; // full star symbol; could use a half-star style if needed
+          star.classList.add('filled'); // replace with 'half-filled' if using half icons
+        }
+      });
+    });
   });
-});
+
 
 // {{{{GRID FUNCTION}}}}
 // ==================================================================================================================================
@@ -86,7 +48,6 @@ function displayrandom() {
   grid_items.forEach((item, index) => {
     if (tempitems.has(index + 1)) {
       item.classList.add("show"); //shows the element
-      console.log(item)
     } else {
       item.classList.remove("show"); // Hide the item
     }
@@ -95,3 +56,42 @@ function displayrandom() {
 
 //when page reload the random grid function will be called
 window.onload = displayrandom;
+
+
+
+
+
+
+
+
+
+
+
+
+// data retriver
+const params = new URLSearchParams(window.location.search);
+const animeId = params.get("id");
+console.log(animeId)
+
+fetch("/static/myapp/Data/action-packed-adventure.json")
+  .then(response => response.json())
+  .then(data => {
+    console.log(data)
+    const anime = data.find(a => a.id === animeId);
+    console.log(anime);  // ADD THIS LINE
+    console.log(anime.images);
+    if (anime) {
+      document.getElementById("Anititle").textContent = anime.title;
+      for (i=0;i<5;i++) {
+        document.getElementById(`ap${i+1}`).src = 'static/' + anime.images[i] ;
+        console.log(document.getElementById(`ap${i+1}`).src)
+      }
+      // document.getElementById("anime-image").src = anime.image;
+      // document.getElementById("anime-image").alt = anime.title;
+      // document.getElementById("anime-rating").textContent = anime.rating;
+      // document.getElementById("description").textContent = anime.description;
+      document.getElementById("description").innerHTML = anime.description;
+    } else {
+      document.querySelector("#anititle").textContent = "<p>Anime not found.</p>";
+    }
+  });

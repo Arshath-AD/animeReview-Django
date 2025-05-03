@@ -1,67 +1,652 @@
 [
   {
-    "id": "AOT",
-    "title": "Attack on Titan",
+    "id": "naruto",
+    "title": "Naruto",
     "images": [
-      "..images/AOT1.jpg",
-      "..images/AOT2.jpg",
-      "..images/AOT3.jpg",
-      "..images/AOT4.jpg",
-      "..images/AOT5.jpg"
+      "myapp/images/rev-images/Naruto1.jpg",
+      "myapp/images/rev-images/Naruto2.jpg",
+      "myapp/images/rev-images/Naruto3.jpg",
+      "myapp/images/rev-images/Naruto4.jpg",
+      "myapp/images/rev-images/Naruto5.jpg"
     ],
-    "description": "A battle for humanity against terrifying Titans. Eren Yeager and his friends join the Survey Corps to uncover the secrets of their world.",
+    "description": "<p>Naruto is a beloved action-adventure anime that follows Naruto Uzumaki, a spirited and determined ninja who dreams of becoming the Hokage—the strongest leader of his village and the one who gains everyone's respect.</p><p>Born with the Nine-Tailed Fox sealed inside him, Naruto grows up ostracized by his fellow villagers but never gives up on his goal. Along the way, he forms deep bonds with his friends Sasuke and Sakura and trains under powerful mentors as he faces formidable enemies and uncovers dark secrets of the ninja world.</p><p>Naruto stands out for its emotional storytelling, dynamic character development, and powerful themes of friendship, perseverance, and self-worth that continue to inspire fans around the world.</p>",
     "rating": 9.5
   },
   {
-    "id": "Naruto",
-    "title": "Naruto",
+    "id": "aot",
+    "title": "Attack on Titan",
     "images": [
-      "images/naruto1.jpg",
-      "images/naruto2.jpg",
-      "images/naruto3.jpg",
-      "images/naruto4.jpg",
-      "images/naruto5.jpg"
+      "myapp/images/rev-images/AOT1.jpg",
+      "myapp/images/rev-images/AOT2.jpg",
+      "myapp/images/rev-images/AOT3.jpg",
+      "myapp/images/rev-images/AOT4.jpg",
+      "myapp/images/rev-images/AOT5.jpg"
     ],
-    "description": "Naruto Uzumaki, a young ninja, dreams of becoming the Hokage and earning the respect of his village.",
-    "rating": 9.0
+    "description": "<p>Attack on Titan (Shingeki no Kyojin) is a gripping action-fantasy anime set in a post-apocalyptic world where humanity is on the brink of extinction due to gigantic, man-eating Titans.</p><p>The story follows Eren Yeager, along with his friends Mikasa and Armin, as they join the Scout Regiment to fight back against the Titans and uncover the dark secrets behind their existence.</p><p>Attack on Titan is widely praised for its animation, complex characters, and thought-provoking themes about freedom, survival, and morality.</p>",
+    "rating": 9.5
   },
   {
-    "id": "OnePiece",
-    "title": "One Piece",
-    "images": [
-      "images/onepiece1.jpg",
-      "images/onepiece2.jpg",
-      "images/onepiece3.jpg",
-      "images/onepiece4.jpg",
-      "images/onepiece5.jpg"
-    ],
-    "description": "Monkey D. Luffy sets out on a grand adventure to find the legendary treasure, One Piece, and become the King of the Pirates.",
-    "rating": 9.7
-  },
-  {
-    "id": "DemonSlayer",
+    "id": "demonslayer",
     "title": "Demon Slayer",
     "images": [
-      "images/demonslayer1.jpg",
-      "images/demonslayer2.jpg",
-      "images/demonslayer3.jpg",
-      "images/demonslayer4.jpg",
-      "images/demonslayer5.jpg"
+      "myapp/images/rev-images/demonslayer1.jpg",
+      "myapp/images/rev-images/demonslayer2.jpg",
+      "myapp/images/rev-images/demonslayer3.jpg",
+      "myapp/images/rev-images/demonslayer4.jpg",
+      "myapp/images/rev-images/demonslayer5.jpg"
     ],
-    "description": "Tanjiro Kamado embarks on a journey to save his sister and defeat the demons that threaten humanity.",
+    "description": "<p>Demon Slayer (Kimetsu no Yaiba) tells the poignant story of Tanjiro Kamado, a kind-hearted boy whose life is shattered when his family is slaughtered by demons and his sister Nezuko is turned into one.</p><p>Determined to restore her humanity and avenge his loved ones, Tanjiro joins the Demon Slayer Corps and embarks on a perilous journey filled with intense battles, powerful friendships, and personal growth.</p><p>With breathtaking animation by studio Ufotable, a hauntingly emotional soundtrack, and heartfelt themes of family, resilience, and compassion, Demon Slayer has earned critical acclaim and a passionate global fanbase.</p>",
     "rating": 8.9
   },
   {
-    "id": "JJK",
+    "id": "onepiece",
+    "title": "One Piece",
+    "images": [
+      "myapp/images/rev-images/onepiece1.jpg",
+      "myapp/images/rev-images/onepiece2.jpg",
+      "myapp/images/rev-images/onepiece3.jpg",
+      "myapp/images/rev-images/onepiece4.jpg",
+      "myapp/images/rev-images/onepiece5.jpg"
+    ],
+    "description": "<p>One Piece is a legendary pirate adventure anime that chronicles the journey of Monkey D. Luffy, a rubber-powered boy with dreams of becoming the King of the Pirates.</p><p>He sails across the vast and dangerous Grand Line with his crew, the Straw Hat Pirates, in search of the fabled treasure known as the One Piece. Along the way, they confront powerful foes, form unbreakable bonds, and challenge the corrupt systems of the world.</p><p>Renowned for its rich world-building, heartfelt character arcs, and epic storytelling, One Piece continues to captivate audiences as one of the longest-running and most beloved anime series of all time.</p>",
+    "rating": 9.7
+  },
+  {
+    "id": "jjk",
     "title": "Jujutsu Kaisen",
     "images": [
-      "images/jjk1.jpg",
-      "images/jjk2.jpg",
-      "images/jjk3.jpg",
-      "images/jjk4.jpg",
-      "images/jjk5.jpg"
+      "myapp/images/rev-images/jjk1.jpg",
+      "myapp/images/rev-images/jjk2.jpg",
+      "myapp/images/rev-images/jjk3.jpg",
+      "myapp/images/rev-images/jjk4.jpg",
+      "myapp/images/rev-images/jjk5.jpg"
     ],
-    "description": "Yuji Itadori becomes involved in the world of Jujutsu Sorcerers after ingesting a powerful cursed object.",
+    "description": "<p>Jujutsu Kaisen is a high-energy supernatural battle anime centered around Yuji Itadori, a high schooler who becomes entangled in the world of curses after swallowing a deadly cursed object to save his friends.</p><p>Now hosting the King of Curses, Ryomen Sukuna, within him, Yuji joins the Tokyo Jujutsu High where he trains with powerful sorcerers to exorcise curses and protect innocent lives from monstrous threats.</p><p>With explosive animation, compelling character dynamics, and a gritty, modern tone, Jujutsu Kaisen has quickly risen to prominence as one of the most exciting and stylish anime of the new generation.</p>",
     "rating": 9.2
+  },
+  {
+    "id": "mha",
+    "title": "My Hero Academia",
+    "images": [
+      "myapp/images/rev-images/mha1.jpg",
+      "myapp/images/rev-images/mha2.jpg",
+      "myapp/images/rev-images/mha3.jpg",
+      "myapp/images/rev-images/mha4.jpg",
+      "myapp/images/rev-images/mha5.jpg"
+    ],
+    "description": "<p>My Hero Academia (Boku no Hero Academia) takes place in a world where the majority of the population is born with superpowers called Quirks. Despite being born powerless, Izuku Midoriya dreams of becoming a hero like his idol, All Might.</p><p>When he inherits All Might's Quirk, One For All, Izuku enrolls at U.A. High School to train alongside other aspiring heroes and face villainous threats that challenge their ideals and strength.</p><p>Combining intense action, emotional storytelling, and a diverse cast of characters, My Hero Academia delivers a heartfelt narrative about courage, growth, and what it truly means to be a hero.</p>",
+    "rating": 8.7
+  },
+  {
+    "id": "fma",
+    "title": "Fullmetal Alchemist: Brotherhood",
+    "images": [
+      "myapp/images/rev-images/fma1.jpg",
+      "myapp/images/rev-images/fma2.jpg",
+      "myapp/images/rev-images/fma3.jpg",
+      "myapp/images/rev-images/fma4.jpg",
+      "myapp/images/rev-images/fma5.jpg"
+    ],
+    "description": "<p>Fullmetal Alchemist: Brotherhood is a masterpiece of anime storytelling that follows Edward and Alphonse Elric, two brothers who suffer a tragic loss after using forbidden alchemy in an attempt to resurrect their mother.</p><p>Their journey to restore their bodies leads them into a complex web of military intrigue, ancient secrets, and powerful enemies, all while exploring the limits of science and the cost of ambition.</p><p>Known for its philosophical themes, deep emotional core, and meticulously crafted world, Fullmetal Alchemist: Brotherhood remains one of the most critically acclaimed anime series ever created.</p>",
+    "rating": 9.6
+  },
+  {
+    "id": "vinlandsaga",
+    "title": "Vinland Saga",
+    "images": [
+      "myapp/images/rev-images/vinland1.jpg",
+      "myapp/images/rev-images/vinland2.jpg",
+      "myapp/images/rev-images/vinland3.jpg",
+      "myapp/images/rev-images/vinland4.jpg",
+      "myapp/images/rev-images/vinland5.jpg"
+    ],
+    "description": "<p>Vinland Saga is a historical epic that follows Thorfinn, a young Viking warrior consumed by revenge after witnessing the murder of his father by the cunning mercenary Askeladd.</p><p>As Thorfinn grows up on the battlefield, he is forced to confront the harsh realities of violence, the true cost of vengeance, and the meaning of honor in a world ruled by war and conquest.</p><p>With cinematic storytelling, brutal action, and deep moral questions, Vinland Saga offers a powerful narrative set during the bloody Viking Age, exploring both human savagery and hope for peace.</p>",
+    "rating": 9.1
+  },
+  {
+    "id": "hxh",
+    "title": "Hunter x Hunter",
+    "images": [
+      "myapp/images/rev-images/hxh1.jpg",
+      "myapp/images/rev-images/hxh2.jpg",
+      "myapp/images/rev-images/hxh3.jpg",
+      "myapp/images/rev-images/hxh4.jpg",
+      "myapp/images/rev-images/hxh5.jpg"
+    ],
+    "description": "<p>Hunter x Hunter is a genre-defying action-adventure anime that follows Gon Freecss, a young boy who embarks on a quest to become a Hunter and find his long-lost father, one of the world's most renowned Hunters.</p><p>As Gon faces the challenges of the rigorous Hunter Exam, he meets friends like Killua, Leorio, and Kurapika, and together they navigate a world filled with deadly creatures, secret societies, and existential dangers.</p><p>Praised for its subversive storytelling, psychological depth, and unpredictable plot twists, Hunter x Hunter remains a shining example of how shonen anime can transcend expectations.</p>",
+    "rating": 9.4
+  },
+  {
+    "id": "drstone",
+    "title": "Dr. Stone",
+    "images": [
+      "myapp/images/rev-images/drstone1.jpg",
+      "myapp/images/rev-images/drstone2.jpg",
+      "myapp/images/rev-images/drstone3.jpg",
+      "myapp/images/rev-images/drstone4.jpg",
+      "myapp/images/rev-images/drstone5.jpg"
+    ],
+    "description": "<p>Dr. Stone is a unique blend of science fiction and survival adventure set in a world where a mysterious phenomenon petrifies all of humanity for over 3,000 years.</p><p>Senku Ishigami, a teenage genius, awakens and sets out to rebuild civilization from scratch using the power of science, challenging nature, rival tribes, and human ignorance along the way.</p><p>Packed with educational fun, innovative problem-solving, and a surprisingly emotional core, Dr. Stone is a celebration of human curiosity, resilience, and the boundless potential of scientific knowledge.</p>",
+    "rating": 8.8
+  },
+  {
+    "id": "rezero",
+    "title": "Re:Zero − Starting Life in Another World",
+    "images": [
+      "myapp/images/rev-images/ReZero1.jpg",
+      "myapp/images/rev-images/ReZero2.jpg",
+      "myapp/images/rev-images/ReZero3.jpg",
+      "myapp/images/rev-images/ReZero4.jpg",
+      "myapp/images/rev-images/ReZero5.jpg"
+    ],
+    "description": "<p>Re:Zero follows Subaru Natsuki, a teenager who finds himself mysteriously transported to a fantasy world. Expecting a grand adventure, Subaru instead discovers a brutal reality where he dies tragically—only to awaken at a previous point in time. He realizes he has the ability to 'Return by Death', a power that allows him to reset events each time he dies.</p><p>With this haunting power, Subaru strives to protect those he comes to care about, including the kind-hearted half-elf Emilia. As he unravels the mysteries of this cruel world, he faces psychological trauma, powerful enemies, and moral dilemmas that challenge his will to continue. The series masterfully balances moments of warmth with gut-wrenching despair.</p><p>Re:Zero is praised for its complex narrative, emotional character arcs, and psychological intensity. It offers a unique take on the isekai genre, emphasizing the consequences of time manipulation and the human cost of heroism.</p>",
+    "rating": 9.0
+  },
+  {
+    "id": "sao",
+    "title": "Sword Art Online",
+    "images": [
+      "myapp/images/rev-images/SwordArtOnline1.jpg",
+      "myapp/images/rev-images/SwordArtOnline2.jpg",
+      "myapp/images/rev-images/SwordArtOnline3.jpg",
+      "myapp/images/rev-images/SwordArtOnline4.jpg",
+      "myapp/images/rev-images/SwordArtOnline5.jpg"
+    ],
+    "description": "<p>Sword Art Online begins with thousands of players trapped in a virtual reality MMORPG where death in the game means death in real life. The protagonist, Kirito, a skilled solo player, must navigate the deadly world of Aincrad to find a way to escape and help others survive.</p><p>As the series progresses, Kirito builds relationships, most notably with Asuna, and becomes a beacon of hope and strength. The story moves through various virtual worlds, each with its own rules, threats, and philosophical challenges related to technology and identity.</p><p>Sword Art Online is known for its high-stakes action, immersive world-building, and emotional storytelling. It raises questions about the future of virtual experiences while delivering visually stunning battles and heartfelt moments.</p>",
+    "rating": 8.4
+  },
+  {
+    "id": "shieldhero",
+    "title": "The Rising of the Shield Hero",
+    "images": [
+      "myapp/images/rev-images/ShieldHero1.jpg",
+      "myapp/images/rev-images/ShieldHero2.jpg",
+      "myapp/images/rev-images/ShieldHero3.jpg",
+      "myapp/images/rev-images/ShieldHero4.jpg",
+      "myapp/images/rev-images/ShieldHero5.jpg"
+    ],
+    "description": "<p>Naofumi Iwatani is summoned to a parallel world as one of four legendary heroes, each equipped with a unique weapon. While the other heroes are celebrated, Naofumi, the Shield Hero, is falsely accused of a crime and abandoned. Betrayed and alone, he must survive in a hostile land with only his shield.</p><p>Over time, Naofumi forms a bond with a demi-human slave girl named Raphtalia and a bird-like creature, Filo. Together, they face dangerous monsters, corrupt nobles, and world-ending threats. Through hardship, Naofumi grows stronger—not just in power, but in character and resolve.</p><p>The Rising of the Shield Hero explores themes of injustice, redemption, and resilience. Its underdog narrative and emotionally driven development have made it a standout in the isekai fantasy genre.</p>",
+    "rating": 8.7
+  },
+  {
+    "id": "madeinabyss",
+    "title": "Made in Abyss",
+    "images": [
+      "myapp/images/rev-images/MadeInAbyss1.jpg",
+      "myapp/images/rev-images/MadeInAbyss2.jpg",
+      "myapp/images/rev-images/MadeInAbyss3.jpg",
+      "myapp/images/rev-images/MadeInAbyss4.jpg",
+      "myapp/images/rev-images/MadeInAbyss5.jpg"
+    ],
+    "description": "<p>Made in Abyss tells the story of Riko, a young girl who dreams of becoming a legendary Cave Raider like her mother. She descends into the Abyss—a mysterious, deadly chasm filled with relics and monsters—accompanied by a robotic boy named Reg. The deeper they go, the more they uncover about the Abyss’s secrets and dangers.</p><p>The Abyss is not only physically challenging but mentally and emotionally harrowing. Its ‘curse’ exacts a terrifying toll on those who ascend, and the creatures and characters encountered are as awe-inspiring as they are horrifying. Despite its cute art style, the story is dark, mature, and deeply tragic.</p><p>With breathtaking visuals, haunting music, and masterful storytelling, Made in Abyss is a powerful journey through beauty and despair. It stands out as one of the most emotionally intense fantasy anime in recent years.</p>",
+    "rating": 9.1
+  },
+  {
+    "id": "blackclover",
+    "title": "Black Clover",
+    "images": [
+      "myapp/images/rev-images/BlackClover1.jpg",
+      "myapp/images/rev-images/BlackClover2.jpg",
+      "myapp/images/rev-images/BlackClover3.jpg",
+      "myapp/images/rev-images/BlackClover4.jpg",
+      "myapp/images/rev-images/BlackClover5.jpg"
+    ],
+    "description": "<p>In a world where magic is everything, Asta is born without any magical power—an anomaly that earns him ridicule. Despite this, he dreams of becoming the Wizard King, the strongest mage in the Clover Kingdom. Through hard work and sheer determination, he gains a rare anti-magic grimoire that turns the tides of battle.</p><p>Alongside his rival and foster brother Yuno, Asta joins the Black Bulls, a group of misfit magic knights. Together, they face off against rogue mages, ancient evils, and political conspiracies. Asta’s unyielding spirit and refusal to give up inspire those around him and change the perception of what it means to be strong.</p><p>Black Clover thrives on its fast-paced action, loud yet lovable protagonist, and themes of perseverance. Though initially criticized for its clichés, it evolves into a fan-favorite with explosive battles and heartfelt moments.</p>",
+    "rating": 8.3
+  },
+  {
+    "id": "nogamenolife",
+    "title": "No Game No Life",
+    "images": [
+      "myapp/images/rev-images/NoGameNoLife1.jpg",
+      "myapp/images/rev-images/NoGameNoLife2.jpg",
+      "myapp/images/rev-images/NoGameNoLife3.jpg",
+      "myapp/images/rev-images/NoGameNoLife4.jpg",
+      "myapp/images/rev-images/NoGameNoLife5.jpg"
+    ],
+    "description": "<p>No Game No Life follows the sibling duo Sora and Shiro, undefeated gamers known as ‘Blank’. They are transported to a fantastical world where all conflicts are resolved through games—no violence, only wits and strategy. The god of this world, Tet, challenges them to rise through the ranks by defeating powerful races.</p><p>Armed with genius intellect and flawless teamwork, Sora and Shiro seek to beat the system and challenge Tet himself. Along the way, they ally with humans and outsmart mythical creatures using clever logic, psychological tricks, and manipulation of rules.</p><p>With its vibrant animation, mind-bending game battles, and unique world mechanics, No Game No Life is a stylish, high-stakes ride. It explores themes of intelligence, connection, and the nature of competition in a playful yet intense way.</p>",
+    "rating": 8.1
+  },
+  {
+    "id": "magi",
+    "title": "Magi: The Labyrinth of Magic",
+    "images": [
+      "myapp/images/rev-images/Magi1.jpg",
+      "myapp/images/rev-images/Magi2.jpg",
+      "myapp/images/rev-images/Magi3.jpg",
+      "myapp/images/rev-images/Magi4.jpg",
+      "myapp/images/rev-images/Magi5.jpg"
+    ],
+    "description": "<p>Magi centers on Aladdin, a mysterious boy with a magical flute that summons a powerful djinn named Ugo. Joined by Alibaba and Morgiana, he journeys through dungeons filled with treasures and ancient magic to uncover his destiny in a world inspired by Arabian Nights.</p><p>The trio faces corrupt empires, slave traders, and political power struggles while exploring the concept of fate, freedom, and the burdens of leadership. With each dungeon conquered, they learn more about their roles in an impending global conflict between light and darkness.</p><p>Filled with vibrant adventure, meaningful themes, and complex world-building, Magi blends action and philosophy. It offers a thrilling narrative with endearing characters and dramatic stakes that elevate it beyond a typical shonen adventure.</p>",
+    "rating": 8.5
+  },
+  {
+    "id": "loghorizon",
+    "title": "Log Horizon",
+    "images": [
+      "myapp/images/rev-images/LogHorizon1.jpg",
+      "myapp/images/rev-images/LogHorizon2.jpg",
+      "myapp/images/rev-images/LogHorizon3.jpg",
+      "myapp/images/rev-images/LogHorizon4.jpg",
+      "myapp/images/rev-images/LogHorizon5.jpg"
+    ],
+    "description": "<p>Log Horizon follows Shiroe, an intelligent and strategic player who becomes trapped in the online game Elder Tale along with thousands of others. Unlike many other isekai stories, the series focuses less on escaping and more on adapting, rebuilding society, and finding purpose within the game world.</p><p>Shiroe forms a guild and begins organizing players to restore order and foster cooperation among the stranded. From establishing politics and economics to defending towns from threats, Log Horizon explores what it means to create a functioning society in a virtual world.</p><p>With its thoughtful world-building and focus on social and political systems, Log Horizon stands out as a cerebral take on the isekai genre. It blends gaming mechanics with real-world strategy, offering both action and deep reflection.</p>",
+    "rating": 8.2
+  },
+  {
+    "id": "fairytail",
+    "title": "Fairy Tail",
+    "images": [
+      "myapp/images/rev-images/FairyTail1.jpg",
+      "myapp/images/rev-images/FairyTail2.jpg",
+      "myapp/images/rev-images/FairyTail3.jpg",
+      "myapp/images/rev-images/FairyTail4.jpg",
+      "myapp/images/rev-images/FairyTail5.jpg"
+    ],
+    "description": "<p>Fairy Tail follows Lucy Heartfilia, a celestial spirit mage who joins the rambunctious and powerful wizard guild, Fairy Tail. There, she teams up with fire dragon slayer Natsu Dragneel, flying blue cat Happy, and others as they take on magical jobs, defeat dark guilds, and fight to protect their world.</p><p>Through massive battles, emotional backstories, and unbreakable friendships, the guild members grow stronger together. The anime emphasizes the power of family, loyalty, and love, with characters often pushing past their limits to defend each other and their ideals.</p><p>Known for its colorful cast, epic arcs, and heartwarming themes, Fairy Tail delivers a high-energy experience that blends comedy, drama, and action. It’s a celebration of camaraderie and never giving up, no matter the odds.</p>",
+    "rating": 8.4
+  },
+  {
+    "id": "sevendeadlysins",
+    "title": "The Seven Deadly Sins",
+    "images": [
+      "myapp/images/rev-images/SevenDeadlySins1.jpg",
+      "myapp/images/rev-images/SevenDeadlySins2.jpg",
+      "myapp/images/rev-images/SevenDeadlySins3.jpg",
+      "myapp/images/rev-images/SevenDeadlySins4.jpg",
+      "myapp/images/rev-images/SevenDeadlySins5.jpg"
+    ],
+    "description": "<p>In a kingdom ruled by corruption and tyranny, the princess Elizabeth seeks out the legendary group of knights known as the Seven Deadly Sins—warriors once accused of betraying the realm. She finds Meliodas, their leader, and together they begin a quest to reunite the team and expose the real traitors.</p><p>The group, each with unique powers and tragic pasts, battles holy knights, demons, and godly forces to restore peace. As secrets of their origins unfold, they face internal and external struggles that test their loyalty and strength.</p><p>The Seven Deadly Sins blends epic battles with mythological themes and character-driven drama. Its blend of humor, romance, and grand storytelling makes it a gripping fantasy filled with both heart and spectacle.</p>",
+    "rating": 8.6
+  },
+  {
+    "id": "bleach",
+    "title": "Bleach",
+    "images": [
+      "myapp/images/rev-images/Bleach1.jpg",
+      "myapp/images/rev-images/Bleach2.jpg",
+      "myapp/images/rev-images/Bleach3.jpg",
+      "myapp/images/rev-images/Bleach4.jpg",
+      "myapp/images/rev-images/Bleach5.jpg"
+    ],
+    "description": "<p>Bleach follows Ichigo Kurosaki, a high school student with the ability to see ghosts. When he inadvertently acquires the powers of a Soul Reaper, he must defend the world of the living from evil spirits known as Hollows and help guide lost souls to the afterlife. As Ichigo grapples with his new responsibilities, he uncovers a dark world of soul societies and deadly enemies.</p><p>The series delves into the inner workings of the Soul Society, the realm of the Soul Reapers, where Ichigo faces increasingly powerful foes and complex political intrigue. With friends like Rukia Kuchiki and Uryu Ishida, Ichigo navigates both supernatural challenges and personal growth.</p><p>Bleach is renowned for its action-packed battles, intricate world-building, and strong character development. It weaves themes of duty, redemption, and sacrifice throughout its long-running story, making it a cornerstone of the supernatural genre.</p>",
+    "rating": 8.3
+  },
+  {
+    "id": "tokyoghoul",
+    "title": "Tokyo Ghoul",
+    "images": [
+      "myapp/images/rev-images/TokyoGhoul1.jpg",
+      "myapp/images/rev-images/TokyoGhoul2.jpg",
+      "myapp/images/rev-images/TokyoGhoul3.jpg",
+      "myapp/images/rev-images/TokyoGhoul4.jpg",
+      "myapp/images/rev-images/TokyoGhoul5.jpg"
+    ],
+    "description": "<p>Tokyo Ghoul follows Ken Kaneki, a college student who survives a near-fatal encounter with a ghoul, a creature that consumes human flesh. After a tragic accident, Kaneki is transformed into a half-ghoul, struggling to adjust to his new life and the horrifying urges that come with it.</p><p>The series delves into Kaneki's internal conflict as he grapples with his humanity while being thrust into a dangerous world where humans and ghouls are in constant conflict. Along the way, he meets other ghouls who offer both companionship and danger, all while uncovering hidden truths about the world of ghouls.</p><p>Tokyo Ghoul is known for its dark, psychological themes and gruesome action sequences. It explores the complex relationship between humans and monsters, identity, and the consequences of survival in a brutal world.</p>",
+    "rating": 8.4
+  },
+  {
+    "id": "blueexorcist",
+    "title": "Blue Exorcist",
+    "images": [
+      "myapp/images/rev-images/BlueExorcist1.jpg",
+      "myapp/images/rev-images/BlueExorcist2.jpg",
+      "myapp/images/rev-images/BlueExorcist3.jpg",
+      "myapp/images/rev-images/BlueExorcist4.jpg",
+      "myapp/images/rev-images/BlueExorcist5.jpg"
+    ],
+    "description": "<p>Blue Exorcist follows Rin Okumura, a teenager who discovers he is the son of Satan. Determined to fight against his dark heritage, Rin joins the True Cross Academy, a training ground for exorcists, in order to fight demons and protect humanity from evil forces.</p><p>As Rin struggles to control his demonic powers, he faces challenges from both within and outside the academy, including battles against powerful demons and complicated relationships with his fellow students. His journey is one of self-discovery, where he learns to accept his powers and use them for good.</p><p>Blue Exorcist offers a thrilling mix of supernatural battles, personal growth, and themes of family and destiny. Its blend of dark humor, action, and emotional stakes makes it a compelling watch for fans of supernatural and action genres.</p>",
+    "rating": 8.2
+  },
+  {
+    "id": "noragami",
+    "title": "Noragami",
+    "images": [
+      "myapp/images/rev-images/Noragami1.jpg",
+      "myapp/images/rev-images/Noragami2.jpg",
+      "myapp/images/rev-images/Noragami3.jpg",
+      "myapp/images/rev-images/Noragami4.jpg",
+      "myapp/images/rev-images/Noragami5.jpg"
+    ],
+    "description": "<p>Noragami follows Yato, a lesser-known god who dreams of becoming a famous deity worshipped by all. He spends his days performing odd jobs for a meager fee, aided by his spirit partner, Yukine, and the once-powerful, now-forlorn, weapon-sprite, Hiyori.</p><p>As the trio battles dangerous spirits and struggles with their pasts, Yato’s quest for recognition leads them into conflicts with more powerful gods, as well as the tension between the living world and the realm of spirits. The series explores the concepts of identity, self-worth, and the search for purpose.</p><p>Noragami balances action with humor and deep emotional storytelling. Its world-building is unique, mixing modern-day Tokyo with divine beings and supernatural forces, making it an engaging and fresh take on the supernatural genre.</p>",
+    "rating": 8.3
+  },
+  {
+    "id": "souleater",
+    "title": "Soul Eater",
+    "images": [
+      "myapp/images/rev-images/SoulEater1.jpg",
+      "myapp/images/rev-images/SoulEater2.jpg",
+      "myapp/images/rev-images/SoulEater3.jpg",
+      "myapp/images/rev-images/SoulEater4.jpg",
+      "myapp/images/rev-images/SoulEater5.jpg"
+    ],
+    "description": "<p>Soul Eater takes place at the Death Weapon Meister Academy, a school dedicated to training students to fight evil spirits. The main characters, Maka Albarn and her partner, the scythe weapon Soul Eater, must hunt down dangerous souls to prevent the rise of a terrifying demon.</p><p>The story revolves around the students' journey to create weapons capable of becoming 'Death Scythes' and protect the world from evil forces. Along the way, they encounter increasingly powerful enemies, both human and supernatural, as they face internal struggles and discover the true nature of evil.</p><p>Soul Eater combines dark themes, vibrant characters, and stylish animation to create a gripping supernatural action series. The anime explores the battle between light and dark, destiny, and friendship, all while delivering intense battles and unforgettable moments.</p>",
+    "rating": 8.5
+  },
+  {
+    "id": "shamanking",
+    "title": "Shaman King",
+    "images": [
+      "myapp/images/rev-images/ShamanKing1.jpg",
+      "myapp/images/rev-images/ShamanKing2.jpg",
+      "myapp/images/rev-images/ShamanKing3.jpg",
+      "myapp/images/rev-images/ShamanKing4.jpg",
+      "myapp/images/rev-images/ShamanKing5.jpg"
+    ],
+    "description": "<p>Shaman King follows Yoh Asakura, a laid-back teenager with a unique ability to communicate with spirits. As a shaman, Yoh can summon and work alongside powerful spirits to compete in the Shaman Fight, a tournament to determine the next Shaman King, the ruler of both the living and the spiritual worlds.</p><p>Along with his friends, including the fierce and determined Anna, Yoh navigates the dangerous world of shamans, facing powerful opponents and uncovering deep secrets about his own past. Throughout the series, Yoh grows as both a fighter and a person, learning the true meaning of strength and friendship.</p><p>Shaman King is known for its rich spiritual themes, action-packed battles, and unique character relationships. Its exploration of spirits, destiny, and the supernatural makes it a standout in the supernatural genre.</p>",
+    "rating": 8.0
+  },
+  {
+    "id": "dgrayman",
+    "title": "D.Gray-man",
+    "images": [
+      "myapp/images/rev-images/DGrayMan1.jpg",
+      "myapp/images/rev-images/DGrayMan2.jpg",
+      "myapp/images/rev-images/DGrayMan3.jpg",
+      "myapp/images/rev-images/DGrayMan4.jpg",
+      "myapp/images/rev-images/DGrayMan5.jpg"
+    ],
+    "description": "<p>D.Gray-man follows Allen Walker, a young exorcist with the ability to destroy demons known as Akuma using his cursed eye and the Innocence, a powerful artifact. Allen joins the Black Order, a secret organization tasked with defeating the Akuma and their creator, the Millennium Earl, who seeks to destroy humanity.</p><p>As Allen and his companions battle against the forces of darkness, they uncover the mysteries surrounding the Akuma, their own pasts, and the origins of the Innocence. The series delves into themes of sacrifice, redemption, and the struggle between good and evil.</p><p>D.Gray-man is praised for its compelling storylines, complex characters, and unique world-building. The mix of dark supernatural elements and intense emotional moments makes it a must-watch for fans of the supernatural and action genres.</p>",
+    "rating": 8.4
+  },
+  {
+    "id": "thedevilisaparttimer",
+    "title": "The Devil is a Part-Timer!",
+    "images": [
+      "myapp/images/rev-images/TheDevilIsAPartTimer1.jpg",
+      "myapp/images/rev-images/TheDevilIsAPartTimer2.jpg",
+      "myapp/images/rev-images/TheDevilIsAPartTimer3.jpg",
+      "myapp/images/rev-images/TheDevilIsAPartTimer4.jpg",
+      "myapp/images/rev-images/TheDevilIsAPartTimer5.jpg"
+    ],
+    "description": "<p>The Devil is a Part-Timer! is a comedic supernatural anime that follows Satan, the Demon Lord, who is forced to retreat to modern-day Tokyo after being defeated in his world. Stripped of his powers, he must take on a part-time job at a fast-food restaurant to survive while plotting to regain his strength and conquer the world.</p><p>As Satan adapts to his new life, he forms alliances with other characters from his demon world, including his loyal general, Alsiel. They must navigate the challenges of daily life while also dealing with other supernatural beings, including a powerful heroine from the human world.</p><p>This series is a delightful blend of supernatural elements and slice-of-life humor. It explores themes of power, survival, and the absurdity of trying to conquer a world with no magic, all while offering comedic moments and clever character dynamics.</p>",
+    "rating": 8.1
+  },
+  {
+    "id": "hellsingultimate",
+    "title": "Hellsing Ultimate",
+    "images": [
+      "myapp/images/rev-images/HellsingUltimate1.jpg",
+      "myapp/images/rev-images/HellsingUltimate2.jpg",
+      "myapp/images/rev-images/HellsingUltimate3.jpg",
+      "myapp/images/rev-images/HellsingUltimate4.jpg",
+      "myapp/images/rev-images/HellsingUltimate5.jpg"
+    ],
+    "description": "<p>Hellsing Ultimate is an action-packed supernatural anime that follows the Hellsing Organization, led by Sir Integra Hellsing, which is dedicated to defending England from supernatural threats, particularly vampires. At the heart of the organization is Alucard, a powerful and nearly invincible vampire who serves as their ultimate weapon.</p><p>The series focuses on Alucard's battles against both humans and supernatural enemies, including rogue vampires and dark organizations. Alongside his partner, Seras Victoria, Alucard fights to protect humanity from the forces of darkness while confronting his own dark past.</p><p>Hellsing Ultimate is known for its dark, violent themes and stylish animation. The series explores the nature of immortality, the cost of power, and the battle between light and darkness, making it a standout in the supernatural genre.</p>",
+    "rating": 8.6
+  },
+  {
+    "id": "blackbutler",
+    "title": "Black Butler",
+    "images": [
+      "myapp/images/rev-images/BlackButler1.jpg",
+      "myapp/images/rev-images/BlackButler2.jpg",
+      "myapp/images/rev-images/BlackButler3.jpg",
+      "myapp/images/rev-images/BlackButler4.jpg",
+      "myapp/images/rev-images/BlackButler5.jpg"
+    ],
+    "description": "<p>Black Butler follows Ciel Phantomhive, a young nobleman who makes a Faustian pact with Sebastian, a demon butler, in order to avenge his parents' mysterious deaths and uncover the truth behind a series of dark events. Together, they navigate the dangerous underworld of Victorian England, facing both human and supernatural threats.</p><p>The series explores themes of revenge, loyalty, and the blurred lines between good and evil. Ciel's quest for justice is complicated by his growing reliance on Sebastian, who harbors his own dark agenda.</p><p>Black Butler is a gripping mix of supernatural mystery, dark humor, and psychological drama. Its stunning animation, complex characters, and unique blend of genres make it a fan favorite in the supernatural anime genre.</p>",
+    "rating": 8.4
+  },
+  {
+    "id": "yourlieinapril",
+    "title": "Your Lie in April",
+    "images": [
+      "myapp/images/rev-images/YourLieInApril1.jpg",
+      "myapp/images/rev-images/YourLieInApril2.jpg",
+      "myapp/images/rev-images/YourLieInApril3.jpg",
+      "myapp/images/rev-images/YourLieInApril4.jpg",
+      "myapp/images/rev-images/YourLieInApril5.jpg"
+    ],
+    "description": "<p>Your Lie in April follows Kousei Arima, a piano prodigy who loses his ability to hear the sound of the piano after his mother's death. His life becomes gray and devoid of music until he meets a spirited violinist named Kaori Miyazono, whose unconventional playing style brings color back into his life.</p><p>The story is a beautiful exploration of love, loss, and the power of music to heal broken hearts. As Kousei navigates his complex emotions, he is forced to confront his past, deal with his lingering grief, and discover the true meaning of music and connection.</p><p>Emotional and heartbreaking, Your Lie in April is a poignant slice-of-life romance that deals with themes of personal growth, emotional vulnerability, and the cathartic release that art can provide. Its stunning animation and unforgettable soundtrack make it a must-watch for fans of emotional storytelling.</p>",
+    "rating": 9.2
+  },
+  {
+    "id": "fruitsbasket",
+    "title": "Fruits Basket",
+    "images": [
+      "myapp/images/rev-images/FruitsBasket1.jpg",
+      "myapp/images/rev-images/FruitsBasket2.jpg",
+      "myapp/images/rev-images/FruitsBasket3.jpg",
+      "myapp/images/rev-images/FruitsBasket4.jpg",
+      "myapp/images/rev-images/FruitsBasket5.jpg"
+    ],
+    "description": "<p>Fruits Basket follows Tohru Honda, an optimistic and kind-hearted girl who ends up living with the mysterious Soma family. She soon learns that the Somas are cursed—when they are hugged by the opposite sex, they transform into animals of the Chinese Zodiac. As Tohru bonds with them, she uncovers their painful secrets and helps them heal.</p><p>At its core, Fruits Basket is a story of family, love, and self-acceptance. Each character’s journey reflects themes of trauma, personal growth, and the importance of being loved and understood. Through Tohru’s compassion, the Somas begin to break free from the cycle of their curse.</p><p>Heartwarming, funny, and deeply emotional, Fruits Basket is a beautiful tale of healing and human connection that resonates with audiences of all ages. Its intricate blend of romance, drama, and comedy ensures it stands out as one of the best slice-of-life series.</p>",
+    "rating": 9.0
+  },
+  {
+    "id": "clannad",
+    "title": "Clannad",
+    "images": [
+      "myapp/images/rev-images/Clannad1.jpg",
+      "myapp/images/rev-images/Clannad2.jpg",
+      "myapp/images/rev-images/Clannad3.jpg",
+      "myapp/images/rev-images/Clannad4.jpg",
+      "myapp/images/rev-images/Clannad5.jpg"
+    ],
+    "description": "<p>Clannad follows Tomoya Okazaki, a high school delinquent who meets a quirky girl named Nagisa Furukawa. Together, they form a club and meet various students, each with their own personal struggles. As Tomoya helps those around him, he starts to open up about his own past, discovering the importance of family, love, and friendship.</p><p>The series is known for its deep emotional impact, especially in its second season, Clannad: After Story, where it explores themes of family, loss, and the challenges of adulthood. The heartfelt moments and tear-jerking scenes make it one of the most impactful slice-of-life and romance anime.</p><p>Clannad is a compelling, bittersweet story that deals with the complexities of life and relationships. It is a must-watch for fans of emotional and thought-provoking anime that touch on the true meaning of home and family.</p>",
+    "rating": 9.3
+  },
+  {
+    "id": "toradora",
+    "title": "Toradora!",
+    "images": [
+      "myapp/images/rev-images/Toradora1.jpg",
+      "myapp/images/rev-images/Toradora2.jpg",
+      "myapp/images/rev-images/Toradora3.jpg",
+      "myapp/images/rev-images/Toradora4.jpg",
+      "myapp/images/rev-images/Toradora5.jpg"
+    ],
+    "description": "<p>Toradora! follows Ryuuji Takasu, a high school student with a fierce-looking face, and Taiga Aisaka, a small but fiery girl who is known for her violent temper. They initially form an unlikely alliance, helping each other with their respective crushes, but as they spend more time together, they develop a deeper bond.</p><p>Despite its comedic moments, Toradora! delves into the emotional struggles of high school students dealing with love, friendship, and self-identity. Ryuuji and Taiga’s dynamic evolves into a heartwarming and touching romance, as both characters grow emotionally and face their personal challenges.</p><p>With its perfect balance of humor and emotional depth, Toradora! is a standout in the slice-of-life genre. It’s a beautiful exploration of love and friendship, making it a fan favorite for anyone who appreciates heartfelt, character-driven storytelling.</p>",
+    "rating": 8.8
+  },
+  {
+    "id": "horimiya",
+    "title": "Horimiya",
+    "images": [
+      "myapp/images/rev-images/Horimiya1.jpg",
+      "myapp/images/rev-images/Horimiya2.jpg",
+      "myapp/images/rev-images/Horimiya3.jpg",
+      "myapp/images/rev-images/Horimiya4.jpg",
+      "myapp/images/rev-images/Horimiya5.jpg"
+    ],
+    "description": "<p>Horimiya follows the unlikely romance between Hori Kyouko, a popular high school girl, and Miyamura Izumi, a seemingly quiet and brooding boy. When they discover each other's secret lives—Hori's domestic side and Miyamura’s hidden piercings and tattoos—they begin to form a deep and unexpected connection.</p><p>The series is a sweet and realistic portrayal of high school romance, with moments of humor, warmth, and tenderness. As the characters navigate their growing relationship, they also deal with personal issues, family dynamics, and the pressures of school life.</p><p>Horimiya stands out for its gentle pacing, relatable characters, and genuine exploration of love, identity, and the challenges of growing up. It’s a delightful and heartwarming series that will appeal to anyone who enjoys slow-burn romance and slice-of-life narratives.</p>",
+    "rating": 8.7
+  },
+  {
+    "id": "kiminimodoke",
+    "title": "Kimi ni Todoke",
+    "images": [
+      "myapp/images/rev-images/KimiNiTodoke1.jpg",
+      "myapp/images/rev-images/KimiNiTodoke2.jpg",
+      "myapp/images/rev-images/KimiNiTodoke3.jpg",
+      "myapp/images/rev-images/KimiNiTodoke4.jpg",
+      "myapp/images/rev-images/KimiNiTodoke5.jpg"
+    ],
+    "description": "<p>Kimi ni Todoke follows the life of Sawako Kuronuma, a shy, misunderstood girl with a striking resemblance to the horror movie character Sadako. Because of her appearance, she’s often feared by her classmates, and her social life is quite isolated. However, everything changes when the popular boy Shouta Kazehaya starts talking to her, helping her break free from her loneliness and misunderstandings.</p><p>The series beautifully explores themes of friendship, love, and self-discovery. As Sawako and Kazehaya’s relationship deepens, they both experience personal growth and find their way through the challenges of high school and growing up. With its sweet and heartwarming moments, Kimi ni Todoke is a wonderful story of first love and finding one’s place in the world.</p><p>With its relatable characters and emotional depth, Kimi ni Todoke is a perfect blend of romance and slice-of-life drama, making it a beloved classic for fans of heartfelt stories of self-acceptance and blossoming love.</p>",
+    "rating": 8.6
+  },
+  {
+    "id": "asliceoflife",
+    "title": "A Slice of Life",
+    "images": [
+      "myapp/images/rev-images/ASliceOfLife1.jpg",
+      "myapp/images/rev-images/ASliceOfLife2.jpg",
+      "myapp/images/rev-images/ASliceOfLife3.jpg",
+      "myapp/images/rev-images/ASliceOfLife4.jpg",
+      "myapp/images/rev-images/ASliceOfLife5.jpg"
+    ],
+    "description": "<p>A Slice of Life is a series that delves into the daily lives of its characters, focusing on their interactions, struggles, and growth. It paints an intimate portrait of human experiences, showcasing moments of joy, sadness, and everything in between. The story revolves around the subtle beauty of ordinary life, making it a reflective and thought-provoking experience for viewers.</p><p>The characters' journeys are grounded in realism, exploring themes such as love, ambition, friendship, and the challenges that come with growing up. A Slice of Life resonates deeply with audiences who appreciate slow-paced, character-driven stories that evoke a sense of nostalgia and connection.</p><p>With its rich, emotional storytelling and emphasis on personal development, A Slice of Life captivates viewers by highlighting the little moments that shape who we are, making it an unforgettable anime for fans of slice-of-life genres.</p>",
+    "rating": 8.4
+  },
+  {
+    "id": "anohana",
+    "title": "Anohana: The Flower We Saw That Day",
+    "images": [
+      "myapp/images/rev-images/Anohana1.jpg",
+      "myapp/images/rev-images/Anohana2.jpg",
+      "myapp/images/rev-images/Anohana3.jpg",
+      "myapp/images/rev-images/Anohana4.jpg",
+      "myapp/images/rev-images/Anohana5.jpg"
+    ],
+    "description": "<p>Anohana follows a group of childhood friends who have drifted apart after the tragic death of one of their own, Menma. Years later, Menma’s ghost reappears, asking them to help fulfill her wish so she can rest in peace. The group must confront their unresolved feelings of guilt, loss, and regret as they reconnect and come to terms with the past.</p><p>The series is an emotional journey about dealing with grief, friendship, and healing. Through its raw portrayal of each character’s inner struggles, AnoHana explores how trauma can shape relationships and the difficulty of moving on from painful memories.</p><p>Heartbreaking yet beautiful, AnoHana is a powerful anime that touches on the themes of memory, loss, and the lasting impact of love and friendship. Its emotional storytelling and unforgettable characters make it a must-watch for fans of tear-jerking, meaningful stories.</p>",
+    "rating": 9.1
+  },
+  {
+    "id": "quintessentialquintuplets",
+    "title": "The Quintessential Quintuplets",
+    "images": [
+      "myapp/images/rev-images/QuintessentialQuintuplets1.jpg",
+      "myapp/images/rev-images/QuintessentialQuintuplets2.jpg",
+      "myapp/images/rev-images/QuintessentialQuintuplets3.jpg",
+      "myapp/images/rev-images/QuintessentialQuintuplets4.jpg",
+      "myapp/images/rev-images/QuintessentialQuintuplets5.jpg"
+    ],
+    "description": "<p>The Quintessential Quintuplets centers around Futaro Uesugi, a high school student who is hired to tutor a group of five identical quintuplet sisters. Each sister has her own unique personality, and Futaro must find a way to help them improve their grades while also navigating the complexities of their relationships.</p><p>As Futaro grows closer to the sisters, he begins to unravel the layers of their personalities and the reasons behind their individual struggles. Amidst the comedy and lighthearted moments, the series explores themes of family, love, and personal growth as Futaro’s feelings toward the sisters become increasingly complicated.</p><p>With its charming characters, humorous moments, and surprising emotional depth, The Quintessential Quintuplets is a delightful rom-com that will captivate viewers who enjoy complex love triangles and character-driven stories.</p>",
+    "rating": 8.7
+  },
+  {
+    "id": "bunnygirlsenpai",
+    "title": "Rascal Does Not Dream of Bunny Girl Senpai",
+    "images": [
+      "myapp/images/rev-images/BunnyGirlSenpai1.jpg",
+      "myapp/images/rev-images/BunnyGirlSenpai2.jpg",
+      "myapp/images/rev-images/BunnyGirlSenpai3.jpg",
+      "myapp/images/rev-images/BunnyGirlSenpai4.jpg",
+      "myapp/images/rev-images/BunnyGirlSenpai5.jpg"
+    ],
+    "description": "<p>Rascal Does Not Dream of Bunny Girl Senpai follows Sakuta Azusagawa, a high school student who encounters a mysterious girl named Mai Sakurajima dressed as a bunny girl. Mai is a well-known actress who is inexplicably invisible to everyone except Sakuta. As he investigates, he learns about the strange phenomenon called ‘Adolescence Syndrome,’ which causes various supernatural occurrences linked to the emotional turmoil of youth.</p><p>The series is an intriguing mix of romance, drama, and supernatural elements, as Sakuta helps Mai and other girls he meets who suffer from similar phenomena. It deals with themes of growing up, identity, and the challenges of adolescence, all while providing a deep look into the characters' personal struggles.</p><p>Rascal Does Not Dream of Bunny Girl Senpai is a thought-provoking anime with memorable characters, witty dialogue, and emotional depth. It’s a unique take on romance and slice-of-life, blending elements of mystery and fantasy with profound emotional experiences.</p>",
+    "rating": 8.8
+  },
+  {
+    "id": "deathnote",
+    "title": "Death Note",
+    "images": [
+      "myapp/images/rev-images/DeathNote1.jpg",
+      "myapp/images/rev-images/DeathNote2.jpg",
+      "myapp/images/rev-images/DeathNote3.jpg",
+      "myapp/images/rev-images/DeathNote4.jpg",
+      "myapp/images/rev-images/DeathNote5.jpg"
+    ],
+    "description": "<p>Death Note follows Light Yagami, a highly intelligent high school student who stumbles upon a mysterious notebook known as the Death Note. This notebook grants the user the power to kill anyone whose name is written in it, provided they know the person’s face. Light decides to use this power to rid the world of criminals and become the god of a new world. However, his actions attract the attention of L, a brilliant detective determined to stop him.</p><p>The series explores themes of morality, justice, and the consequences of absolute power. It delves into the psychological warfare between Light and L as they try to outwit each other. With its complex characters and moral dilemmas, Death Note is one of the most iconic psychological thrillers in anime history.</p><p>Intense, suspenseful, and thought-provoking, Death Note keeps viewers on the edge of their seats with its clever plot twists and deep philosophical questions about life and death.</p>",
+    "rating": 9.3
+  },
+  {
+    "id": "erased",
+    "title": "Erased",
+    "images": [
+      "myapp/images/rev-images/Erased1.jpg",
+      "myapp/images/rev-images/Erased2.jpg",
+      "myapp/images/rev-images/Erased3.jpg",
+      "myapp/images/rev-images/Erased4.jpg",
+      "myapp/images/rev-images/Erased5.jpg"
+    ],
+    "description": "<p>Erased follows Satoru Fujinuma, a struggling manga artist with the ability to time travel briefly to prevent disasters from happening. One day, after being falsely accused of a crime, he is sent 18 years back in time to his childhood. Realizing that a series of child abductions and murders were connected to a classmate's death, Satoru must unravel the mystery and save his friends before it's too late.</p><p>The anime masterfully combines mystery, thriller, and time travel elements as Satoru navigates both the past and present. As he digs deeper into the case, he begins to question his own choices and the meaning of fate.</p><p>With its gripping storyline, emotional depth, and surprising plot twists, Erased keeps the audience engaged from start to finish. It’s a powerful narrative about redemption, friendship, and the importance of confronting the past.</p>",
+    "rating": 8.9
+  },
+  {
+    "id": "monster",
+    "title": "Monster",
+    "images": [
+      "myapp/images/rev-images/Monster1.jpg",
+      "myapp/images/rev-images/Monster2.jpg",
+      "myapp/images/rev-images/Monster3.jpg",
+      "myapp/images/rev-images/Monster4.jpg",
+      "myapp/images/rev-images/Monster5.jpg"
+    ],
+    "description": "<p>Monster is a psychological thriller that follows Dr. Kenzo Tenma, a skilled surgeon who saves the life of a young boy, only to discover that the boy grows up to become a ruthless and dangerous murderer. As Tenma tries to unravel the truth behind the boy’s sinister transformation, he becomes embroiled in a complex conspiracy involving a series of murders, moral dilemmas, and his own quest for redemption.</p><p>The series tackles themes of human nature, guilt, and the moral consequences of one’s actions. It’s a slow-burn thriller that dives deep into the psychology of its characters, exploring the blurred line between good and evil.</p><p>With its chilling atmosphere and intricate plot, Monster keeps viewers on edge as the narrative unfolds in unexpected and shocking ways. It’s a hauntingly brilliant exploration of the darkest corners of the human mind.</p>",
+    "rating": 9.2
+  },
+  {
+    "id": "promisedneverland",
+    "title": "The Promised Neverland",
+    "images": [
+      "myapp/images/rev-images/PromisedNeverland1.jpg",
+      "myapp/images/rev-images/PromisedNeverland2.jpg",
+      "myapp/images/rev-images/PromisedNeverland3.jpg",
+      "myapp/images/rev-images/PromisedNeverland4.jpg",
+      "myapp/images/rev-images/PromisedNeverland5.jpg"
+    ],
+    "description": "<p>The Promised Neverland follows a group of orphans who live in a seemingly perfect orphanage under the care of a kind woman known as ‘Mother.’ However, they soon discover the horrifying truth: the orphans are being raised as livestock to be fed to demons. Emma, Norman, and Ray, three of the brightest children in the orphanage, plot an escape to save the others from their grim fate.</p><p>The series expertly builds tension as the children use their intelligence and teamwork to outwit their captors. It’s a high-stakes thriller with psychological twists and turns that will keep viewers guessing until the very end.</p><p>With its dark themes of survival, trust, and sacrifice, The Promised Neverland is a suspenseful and thrilling ride, offering a chilling look at a dystopian world where nothing is as it seems.</p>",
+    "rating": 8.8
+  },
+  {
+    "id": "psychopass",
+    "title": "Psycho-Pass",
+    "images": [
+      "myapp/images/rev-images/PsychoPass1.jpg",
+      "myapp/images/rev-images/PsychoPass2.jpg",
+      "myapp/images/rev-images/PsychoPass3.jpg",
+      "myapp/images/rev-images/PsychoPass4.jpg",
+      "myapp/images/rev-images/PsychoPass5.jpg"
+    ],
+    "description": "<p>Psycho-Pass takes place in a futuristic society where the government uses a system called the Psycho-Pass to measure the mental state of citizens and predict their likelihood of committing crimes. Akane Tsunemori, a rookie inspector, works with her enforcer Shinya Kogami to uphold the law, but as she uncovers the truth about the system and the darkness within it, she begins to question the ethics of such a system.</p><p>The anime explores complex philosophical questions about justice, free will, and the morality of a surveillance state. It delves into the consequences of relying on technology to determine human behavior and the loss of personal agency in a hyper-controlled society.</p><p>With its intense action, thought-provoking themes, and a dark dystopian setting, Psycho-Pass is a mind-bending thriller that keeps viewers on edge while challenging them to think critically about the nature of justice and freedom.</p>",
+    "rating": 9.0
+  },
+  {
+    "id": "steinsgate",
+    "title": "Steins;Gate",
+    "images": [
+      "myapp/images/rev-images/SteinsGate1.jpg",
+      "myapp/images/rev-images/SteinsGate2.jpg",
+      "myapp/images/rev-images/SteinsGate3.jpg",
+      "myapp/images/rev-images/SteinsGate4.jpg",
+      "myapp/images/rev-images/SteinsGate5.jpg"
+    ],
+    "description": "<p>Steins;Gate follows Rintarou Okabe, a self-proclaimed mad scientist, who accidentally discovers a way to send messages to the past using a microwave. Along with his group of friends, he finds himself entangled in a time-bending conspiracy involving dangerous organizations and a race against time. As the timeline starts to unravel, Rintarou must navigate the consequences of his actions to prevent a catastrophic future.</p><p>The series expertly blends science fiction, suspense, and emotional drama, offering a gripping narrative full of plot twists. Its exploration of time travel is both thought-provoking and unpredictable, as characters grapple with the effects of their choices and the potential for a devastating future.</p><p>Steins;Gate is widely praised for its intelligent storytelling, engaging characters, and heart-wrenching emotional arcs. It’s a perfect blend of thrilling sci-fi and psychological suspense.</p>",
+    "rating": 9.4
+  },
+  {
+    "id": "futurediary",
+    "title": "Future Diary",
+    "images": [
+      "myapp/images/rev-images/FutureDiary1.jpg",
+      "myapp/images/rev-images/FutureDiary2.jpg",
+      "myapp/images/rev-images/FutureDiary3.jpg",
+      "myapp/images/rev-images/FutureDiary4.jpg",
+      "myapp/images/rev-images/FutureDiary5.jpg"
+    ],
+    "description": "<p>Future Diary centers around Yukiteru Amano, a lonely teenager who becomes involved in a deadly game where participants use diaries that predict the future. The twist? The diaries are tailored to their owner's life and actions, and the last person standing will become the new god. Yukiteru teams up with the psychotic Yuno Gasai, who is obsessed with him, as they fight for survival against other diary holders.</p><p>The anime is full of suspense, action, and psychological drama as alliances are formed and broken, and every player tries to outwit the others using their unique powers. Yuno's unpredictable behavior adds a layer of tension and danger to every situation, keeping viewers on edge.</p><p>Future Diary’s dark themes of survival, obsession, and trust make it a thrilling watch, filled with shocking twists and a captivating, chaotic story.</p>",
+    "rating": 8.7
+  },
+  {
+    "id": "paranoiaagent",
+    "title": "Paranoia Agent",
+    "images": [
+      "myapp/images/rev-images/ParanoiaAgent1.jpg",
+      "myapp/images/rev-images/ParanoiaAgent2.jpg",
+      "myapp/images/rev-images/ParanoiaAgent3.jpg",
+      "myapp/images/rev-images/ParanoiaAgent4.jpg",
+      "myapp/images/rev-images/ParanoiaAgent5.jpg"
+    ],
+    "description": "<p>Paranoia Agent is a psychological thriller that explores the lives of various individuals in Tokyo as they are connected by the mysterious figure known as Lil' Slugger, a boy on rollerblades who attacks his victims with a golden bat. The series weaves together different storylines, as each character deals with their own psychological struggles, and the investigation into the attacks becomes increasingly surreal.</p><p>With its themes of mental illness, societal pressures, and the blurred line between reality and fantasy, Paranoia Agent is a unique and unsettling series. It’s a thought-provoking exploration of the human psyche and the effects of trauma and stress on individuals.</p><p>With its surreal storytelling, dark humor, and psychological depth, Paranoia Agent is a disturbing and captivating anime that keeps viewers questioning what’s real and what’s imagined.</p>",
+    "rating": 8.6
+  },
+  {
+    "id": "ghosthunt",
+    "title": "Ghost Hunt",
+    "images": [
+      "myapp/images/rev-images/GhostHunt1.jpg",
+      "myapp/images/rev-images/GhostHunt2.jpg",
+      "myapp/images/rev-images/GhostHunt3.jpg",
+      "myapp/images/rev-images/GhostHunt4.jpg",
+      "myapp/images/rev-images/GhostHunt5.jpg"
+    ],
+    "description": "<p>Ghost Hunt follows Mai Taniyama, a high school student who becomes involved with the Shibuya Psychic Research team after witnessing a ghostly phenomenon. The team, led by the enigmatic and often abrasive Kazuya Shibuya, investigates paranormal occurrences and spirits in haunted locations. As they uncover dark secrets, the team faces terrifying encounters with the supernatural, testing their courage and their understanding of the unknown.</p><p>With its combination of horror, mystery, and psychological tension, Ghost Hunt is a captivating series that explores the paranormal from a scientific perspective. The eerie atmosphere and suspenseful plots keep the viewers on edge as each case unravels.</p><p>While primarily a ghost-hunting mystery, the show also delves into the personal struggles and growth of the characters, offering a well-rounded narrative that blends horror with emotional depth.</p>",
+    "rating": 8.4
+  },
+  {
+    "id": "higurashiwhentheycry",
+    "title": "Higurashi: When They Cry",
+    "images": [
+      "myapp/images/rev-images/Higurashi1.jpg",
+      "myapp/images/rev-images/Higurashi2.jpg",
+      "myapp/images/rev-images/Higurashi3.jpg",
+      "myapp/images/rev-images/Higurashi4.jpg",
+      "myapp/images/rev-images/Higurashi5.jpg"
+    ],
+    "description": "<p>Higurashi: When They Cry is a disturbing psychological horror anime set in the rural village of Hinamizawa, where a series of gruesome murders and disappearances occur every year during the Watanagashi Festival. The story follows Keiichi Maebara, who moves to the village and becomes entangled in the dark mysteries surrounding the festival. As the narrative unfolds, the viewers are led through multiple timelines, with each revealing different pieces of the horrific puzzle.</p><p>Known for its unsettling atmosphere, graphic violence, and complex storytelling, Higurashi explores themes of paranoia, trust, and the darkness lurking within a seemingly peaceful community. The shifting timelines and unpredictable twists create a sense of growing dread.</p><p>With its combination of psychological horror and mystery, Higurashi: When They Cry is a gripping and disturbing anime that challenges viewers to question the reliability of their perceptions and the nature of reality itself.</p>",
+    "rating": 8.8
   }
 ]

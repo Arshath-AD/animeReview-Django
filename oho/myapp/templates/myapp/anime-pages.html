@@ -1,9 +1,9 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    {% load static %}
     <link rel="stylesheet" href="{% static 'myapp/CSS/style.css' %}">
     <link rel="stylesheet" href="{% static 'myapp/CSS/anime-page.css' %}">
     <title>review</title>
@@ -93,11 +93,11 @@
             </div>
             <div class="slidebar">
               <div class="imgsrev">
-                <img class="img-rev ap1" src="{% static 'myapp/images/anime/Death-notej.jpg' %}" alt="img1">
-                <img class="img-rev ap2" src="{% static 'myapp/images/random-index/AOT.jpg' %}" alt="img2">
-                <img class="img-rev ap3" src="{% static 'myapp/images/anime/cowboy-bebop.jpg' %}" alt="img3">
-                <img class="img-rev ap4" src="{% static 'myapp/images/anime/monster.jpg' %}" alt="img4">
-                <img class="img-rev ap5" src="{% static 'myapp/images/anime/Hunterj.jpg' %}" alt="img5">
+                <img class="img-rev" id="ap1" src="{% static 'myapp/images/anime/Death-notej.jpg' %}" alt="img1">
+                <img class="img-rev" id="ap2" src="{% static 'myapp/images/random-index/AOT.jpg' %}" alt="img2">
+                <img class="img-rev" id="ap3" src="{% static 'myapp/images/anime/cowboy-bebop.jpg' %}" alt="img3">
+                <img class="img-rev" id="ap4" src="{% static 'myapp/images/anime/monster.jpg' %}" alt="img4">
+                <img class="img-rev" id="ap5" src="{% static 'myapp/images/anime/Hunterj.jpg' %}" alt="img5">
               </div>
             </div>
             <div class="rrev-img">
@@ -107,7 +107,7 @@
           <div class="re-view">
             <div class="title">
               <div class="titlechild">
-                <h1>Attack On Titans</h1>
+                <h1 id="Anititle">Attack On Titans</h1>
 
               </div>
             </div>
@@ -120,52 +120,52 @@
                   <span class="star" data-value="4">&#9733;</span>
                   <span class="star" data-value="5">&#9733;</span>
                 </div>
-                <p>Attack on Titan (Shingeki no Kyojin) is a gripping action-fantasy anime set in a post-apocalyptic world where humanity is on the brink of extinction due to gigantic, man-eating Titans.<br/> <br/> The story follows Eren Yeager, along with his friends Mikasa and Armin, as they join the Scout Regiment to fight back against the Titans and uncover the dark secrets behind their existence.<br/><br/>Attack on Titan is widely praised for its animation, complex characters, and thought-provoking themes about freedom, survival, and morality.</p>                
+                <div id="description" ></div>                
               </div>
             </div>
           </div>
           <div class="easter-eggs">
-            <h1>Suggestion</h1>
+            <h1>SUGGESTION</h1>
             <div class="part-child-ARP">
               <div class="ani-con-ARP">
-                <img class="homie-i-ARP" src="{% static 'myapp/images/home-img/naruto-classic.jpg' %}" alt="Naruto">
-                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Naruto</p></a>
+                <a class="homeIA" href="./anime-pages.html?id=naruto"><img class="homie-i" src="{% static 'myapp/images/home-img/naruto-classic.jpg' %}" alt="Naruto"></a>
+                <a class="A-hom-ARP" href="./anime-pages.html?id=naruto"><p class="homie-p-ARP">Naruto</p></a>
               </div>
               <div class="ani-con-ARP">
-                <img class="homie-i-ARP" src="{% static 'myapp/images/home-img/AOT.jpg' %}" alt="Attack on Titan">
-                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Attack on Titan</p></a>
+               <a class="homeIA" href="./anime-pages.html?id=aot"><img class="homie-i" src="{% static 'myapp/images/home-img/AOT.jpg' %}" alt="Attack on Titan"></a>
+                <a class="A-hom-ARP" href="./anime-pages.html?id=aot"><p class="homie-p-ARP">Attack on Titan</p></a>
               </div>
               <div class="ani-con-ARP">
-                <img class="homie-i-ARP" src="{% static 'myapp/images/home-img/Demon-slayer.jpg' %}" alt="Demon Slayer">
-                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Demon Slayer</p></a>
+               <a class="homeIA" href="./anime-pages.html?id=demonslayer"><img class="homie-i" src="{% static 'myapp/images/home-img/Demon-slayer.jpg' %}" alt="Demon Slayer"></a>
+                <a class="A-hom-ARP" href="./anime-pages.html?id=demonslayer"><p class="homie-p-ARP">Demon Slayer</p></a>
               </div>
               <div class="ani-con-ARP">
-                <img class="homie-i-ARP" src="{% static 'myapp/images/home-img/ONE PIECE Egghead Arc.jpeg' %}" alt="One Piece">
-                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">One Piece</p></a>
+               <a class="homeIA" href="./anime-pages.html?id=onepiece"><img class="homie-i" src="{% static 'myapp/images/home-img/ONE PIECE Egghead Arc.jpeg' %}" alt="One Piece"></a>
+                <a class="A-hom-ARP" href="./anime-pages.html?id=onepiece"><p class="homie-p-ARP">One Piece</p></a>
               </div>
               <div class="ani-con-ARP">
-                <img class="homie-i-ARP" src="{% static 'myapp/images/home-img/JJK.jpeg' %}" alt="Jujutsu Kaisen">
-                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Jujutsu Kaisen</p></a>
+               <a class="homeIA" href="./anime-pages.html?id=jjk"><img class="homie-i" src="{% static 'myapp/images/home-img/JJK.jpeg' %}" alt="Jujutsu Kaisen"></a>
+                <a class="A-hom-ARP" href="./anime-pages.html?id=jjk"><p class="homie-p-ARP">Jujutsu Kaisen</p></a>
               </div>
               <div class="ani-con-ARP">
-                <img class="homie-i-ARP" src="{% static 'myapp/images/home-img/MY-hero-acadamia.jpeg' %}" alt="My Hero Academia">
-                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">My Hero Academia</p></a>
+               <a class="homeIA" href="./anime-pages.html?id=mha"><img class="homie-i" src="{% static 'myapp/images/home-img/MY-hero-acadamia.jpeg' %}" alt="My Hero Academia"></a>
+                <a class="A-hom-ARP" href="./anime-pages.html?id=mha"><p class="homie-p-ARP">My Hero Academia</p></a>
               </div>
               <div class="ani-con-ARP">
-                <img class="homie-i-ARP" src="{% static 'myapp/images/top-10/fullmental.png' %}" alt="Fullmetal Alchemist: Brotherhood">
-                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Fullmetal Alchemist</p></a>
+               <a class="homeIA" href="./anime-pages.html?id=fma"><img class="homie-i" src="{% static 'myapp/images/top-10/fullmental.png' %}" alt="Fullmetal Alchemist: Brotherhood"></a>
+                <a class="A-hom-ARP" href="./anime-pages.html?id=fma"><p class="homie-p-ARP">Fullmetal Alchemist</p></a>
               </div>
               <div class="ani-con-ARP">
-                <img class="homie-i-ARP" src="{% static 'myapp/images/home-img/Vinland Saga.jpeg' %}" alt="Vinland Saga">
-                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Vinland Saga</p></a>
+               <a class="homeIA" href="./anime-pages.html?id=vinlandsaga"><img class="homie-i" src="{% static 'myapp/images/home-img/Vinland Saga.jpeg' %}" alt="Vinland Saga"></a>
+                <a class="A-hom-ARP" href="./anime-pages.html?id=vinlandsaga"><p class="homie-p-ARP">Vinland Saga</p></a>
               </div>
               <div class="ani-con-ARP">
-                <img class="homie-i-ARP" src="{% static 'myapp/images/top-10/hunter.png' %}" alt="Hunter x Hunter">
-                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Hunter x Hunter</p></a>
+               <a class="homeIA" href="./anime-pages.html?id=hxh"><img class="homie-i" src="{% static 'myapp/images/home-img/MY-hero-acadamia.jpeg' %}" alt="Hunter x Hunter"></a>
+                <a class="A-hom-ARP" href="./anime-pages.html?id=hxh"><p class="homie-p-ARP">Hunter x Hunter</p></a>
               </div>
               <div class="ani-con-ARP">
-                <img class="homie-i-ARP" src="{% static 'myapp/images/home-img/Dr_Stone.jpeg' %}" alt="Dr. Stone">
-                <a class="A-hom-ARP" href="#"><p class="homie-p-ARP">Dr. Stone</p></a>
+               <a class="homeIA" href="./anime-pages.html?id=drstone"><img class="homie-i" src="{% static 'myapp/images/home-img/Dr_Stone.jpeg' %}" alt="Dr. Stone"></a>
+                <a class="A-hom-ARP" href="./anime-pages.html?id=drstone"><p class="homie-p-ARP">Dr. Stone</p></a>
               </div>
               <div class="ani-con-ARP">
                 <img class="homie-i-ARP" src="{% static 'myapp/images/top-10/death-note.png' %}" alt="Death Note">
