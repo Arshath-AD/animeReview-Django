@@ -6,37 +6,48 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Anime-Explorer-AD</title>
     <link rel="stylesheet" href="{% static 'myapp/CSS/style.css' %}" />
+    <link rel="icon" href="{% static 'myapp/images/logo-orewa.png' %}" type="image/png">
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Playwrite+NL+Guides&display=swap");
       @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playwrite+NL+Guides&display=swap");
     </style>
     <style>
-      .setting-page {
-        position: fixed;
-        padding: 2rem 8rem;
-        display: none;
-        top: 4.9rem;
+      .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -2;
+      object-fit: fill;
+      transform: scale(1.25) translateX(10%); /* zoom in and move right */
+      transform-origin: center; /* or left/right depending on the effect */
       }
 
-      
-      .p2,
-      .p3 {
-        display: none;
-      }
     </style>
   </head>
   <body>
-    <div class="entire-page">
+
+          <!-- Video Background -->
+    <video autoplay muted loop class="video-bg">
+      <source src="{% static 'myapp/video/web-bg.mp4' %}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+        <!-- Gradient Overlay -->
+    <div class="video-overlay"></div>
+
+    
       <header class="dashboard">
         <ul class="pagesHS">
           <li class="homelink">
             <a class="a-ihom" href="./home.html">
-              <p id="home-a">Home</p>
+              <p id="home-a">HOME</p>
             </a>
           </li>
           <li class="settinglink">
-            <p onclick="settin_thing('setting-page')" id="setting-a">Settings</p>
+            <p onclick="settin_thing('setting-page')" id="setting-a">SETTINGS</p>
           </li>
         </ul>
         <h1 class="orewa-nova homeON">Ore-Wa Nova</h1>
@@ -222,7 +233,7 @@
           </div>
         </div>
         <div class="parent-random-anime">
-          <h1 class="suggestion SL">Suggestions:</h1>
+          <h1 class="suggestion SL">SUGGESTIONS</h1>
           <div class="random-anime">
             <div class="ani-item">
               <img
@@ -602,7 +613,6 @@
           <p class="foot">Arshath ahamed M</p>
         </div>
       </footer>
-    </div>
     <script src="{% static 'myapp/JS/app.js' %}"></script>
   </body>
 </html>

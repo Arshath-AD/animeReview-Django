@@ -1,55 +1,186 @@
-/* Save this as login.css inside static/myapp/css/login.css */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NL+Guides&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Playwrite+NL+Guides&display=swap");
 
 .login-body {
-    background-color: #0a0a0a;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    font-family: 'Poppins', sans-serif;
-    color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  font-family: 'Poppins', sans-serif;
+  color: #ffffff;
+}
+
+.back-btn
+{
+  user-select: none;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  color: aliceblue;
+  transition: color 0.5s ease;
+  background-color: hsla(0, 0%, 0%, 0.686);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.back-btn:hover 
+{
+  color: #2aff22;
+  background-color: rgba(105, 105, 105, 0.4);
+}
+
+h1
+{
+  user-select: none;
+  position: fixed;
+  top: 0px;
+  margin: auto;
+  text-align: center;
+  font-family: "Indie Flower", cursive;
+  font-size: 3rem;
+  font-weight: 900;
+  color: hsl(110, 100%, 54%);
+  animation-name: glow;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;  
+  text-shadow: 0 0 5px hsl(110, 100%, 54%), 0 0 10px hsl(111, 100%, 57%), 0 0 15px hsl(118, 100%, 60%),
+    0 0 62px hsl(111, 100%, 62%);
+}
+
+.login-container {
+  /* animation-name: border-rotate; */
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  background: hsla(0, 0%, 10%, 0.542);
+  backdrop-filter: blur(8px);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  /* border-radius: 9rem; */
+  height: 75%;
+  width: 60%;
+  text-align: center;
+  /* margin-top: 3vh; */
+  border-radius: 0px 2rem 0px 2rem;
+  box-shadow: 0px 0px 80px hsl(0, 0%, 0%);
+}
+
+.login{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(0, 0%, 0%, 0.925);
+  border-radius: 0rem 0px 0px 2rem;
+}
+
+.signin{
+  height: 100%;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: hsla(0, 0%, 100%, 0.055);
+  border-radius: 0px 2rem 0px 0px;
+}
+
+.sec span 
+{
+  color: red;
+}
+
+/* .singin h2 
+{
+  margin-bottom: 0rem;
+} */
+
+.input-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 11px;
+}
+
+.input-group input {
+  width: 18rem;
+  padding: 4px;
+  border: none;
+  border-radius: 5px;
+  background-color: hsla(0, 0%, 100%, 0.176);
+}
+
+.login-btn {
+  user-select: none;
+  margin-top: 20px;
+  padding: 10px 10px;
+  background-color: hsl(110, 100%, 54%);
+  box-shadow: 0 0 5px hsl(110, 100%, 54%), 0 0 10px hsl(111, 100%, 57%);
+  color: #000;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  width: 40%;
+}
+
+.login-btn:hover {
+  background: hsl(110, 100%, 39%);
+}
+
+@keyframes glow {
+  0%{
+    text-shadow: 0 0 5px hsl(110, 100%, 54%), 0 0 10px hsl(111, 100%, 57%), 0 0 15px hsl(118, 100%, 60%),
+    0 0 62px hsl(111, 100%, 62%);
   }
-  
-  .login-container {
-    background: #1a1a1a;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px #54ff29;
-    width: 300px;
-    text-align: center;
+  50%{
+    text-shadow: 0 0 5px hsl(110, 100%, 54%), 0 0 10px hsl(111, 100%, 57%);
   }
-  
-  .input-group {
-    margin: 15px 0;
-    text-align: left;
+  100%{
+    text-shadow: 0 0 5px hsl(110, 100%, 54%), 0 0 10px hsl(111, 100%, 57%), 0 0 15px hsl(118, 100%, 60%),
+    0 0 62px hsl(111, 100%, 62%);
   }
-  
-  .input-group label {
-    display: block;
-    margin-bottom: 5px;
-    font-size: 14px;
+}
+
+@keyframes border-rotate
+{
+  0%{
+    box-shadow: 0px 6px 2px hsl(110, 100%, 54%), 0px 6px 5px hsl(118, 100%, 60%);
   }
-  
-  .input-group input {
-    width: 100%;
-    padding: 8px;
-    border: none;
-    border-radius: 5px;
+  12.5%{
+    box-shadow: -6px 6px 2px hsl(110, 100%, 54%), -6px 6px 5px hsl(118, 100%, 60%)
   }
-  
-  .login-btn {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background: #16ff16;
-    color: #000;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-weight: bold;
-    width: 100%;
+  25%{
+    box-shadow: -6px 0px 2px hsl(110, 100%, 54%), -6px 0px 5px hsl(118, 100%, 60%);
   }
-  
-  .login-btn:hover {
-    background: #1eb400;
+  37.5%{
+    box-shadow: -6px -6px 2px hsl(110, 100%, 54%), -6px -6px 5px hsl(118, 100%, 60%)
   }
-  
+  50%{
+    box-shadow: 0px -6px 2px hsl(110, 100%, 54%), 0px -6px 5px hsl(118, 100%, 60%);
+  }
+  62.5%{
+    box-shadow: 6px -6px 2px hsl(110, 100%, 54%), 6px -6px 5px hsl(118, 100%, 60%);
+  }
+  75%{
+    box-shadow: 6px 0px 2px hsl(110, 100%, 54%), 6px 0px 5px hsl(118, 100%, 60%)
+  }
+  87.5%{
+    box-shadow: 6px 6px 2px hsl(110, 100%, 54%), 6px 6px 5px hsl(118, 100%, 60%)
+  }
+  100%{
+    box-shadow: 0px 6px 2px hsl(110, 100%, 54%), 0px 6px 5px hsl(118, 100%, 60%);
+  }
+}

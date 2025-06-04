@@ -6,26 +6,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>HOME</title>
     <link rel="stylesheet" href="{% static 'myapp/CSS/style.css' %}">
+    <link rel="icon" href="{% static 'myapp/images/logo-orewa.png' %}" type="image/png">
       <style>
-      .setting-page {
+
+      .video-bg {
       position: fixed;
-      padding: 5rem 10rem;
-      display: none;
-      top: 4.9rem;
-      z-index: 10;
-      width: 100%;
-      position: absolute;
-      transition: all 1s linear;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -2;
+      object-fit: center;
+      transform: scale(1.25) translateX(10%); /* zoom in and move right */
+      transform-origin: center; /* or left/right depending on the effect */
       }
-      
-      .p2,.p3 {
-        display: none;
-
-      }
-
+        
       </style>
   </head>
   <body class="BG">
+
+      <!-- Video Background -->
+    <video autoplay muted loop class="video-bg">
+      <source src="{% static 'myapp/video/homebg.mp4' %}" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+        <!-- Gradient Overlay -->
+    <div class="video-overlay"></div>
+
     <div class="entire-home">
       <div class="setting-page">
         <div class="entire-setting">
@@ -63,17 +71,17 @@
         <div class="top-child">
           <div class="logo-">
             <a href="./index.html" class="anc-lead-h">
-              <p class="hleadboard">Leader Board</p>                
+              <p class="hleadboard">LEADER BOARD</p>       
             </a>
           </div>
           <div class="pages">
             <ul id="pop-up">
               <li class="home">
-                <p id="home-a" onclick="window.location.href='./login.html'">Login</p>
+                <p id="home-a" onclick="window.location.href='./login.html'">LOGIN</p>
                 
               </li>
               <li onclick="settin_thing('setting-page')" class="setting">
-                <p  id="setting-a">Settings</p>
+                <p  id="setting-a">SETTINGS</p>
               </li>
             </ul>
           </div>

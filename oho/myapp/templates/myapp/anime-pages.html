@@ -6,26 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="{% static 'myapp/CSS/style.css' %}">
     <link rel="stylesheet" href="{% static 'myapp/CSS/anime-page.css' %}">
+    <link rel="icon" href="{% static 'myapp/images/logo-orewa.png' %}" type="image/png">
     <title>review</title>
     <style>
-
-
-      .setting-page {
-      padding: 5rem 10rem;
-      display: none;
-      top: 4.9rem;
-      z-index: 8;
-      width: 100%;
-      position: absolute;
-      }
-
-      .p2,.p3 {
-        display: none;
-
+      .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -2;
+      object-fit: fill;
+      transform: scale(1.25) translateX(10%); /* zoom in and move right */
+      transform-origin: center; /* or left/right depending on the effect */
       }
     </style>
   </head>
   <body class="BG left">
+
+    <!-- Video Background -->
+  <video autoplay muted loop class="video-bg">
+    <source src="{% static 'myapp/video/homebg.mp4' %}" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+      <!-- Gradient Overlay -->
+  <div class="video-overlay"></div>
+
     <div class="entire-reviewpage">
       <header class="top">
         <div class="top-child">
@@ -50,6 +57,7 @@
               </li>
             </ul>
           </div>
+        </div>
       </header>
       <div class="setting-page">
         <div class="entire-setting">
@@ -93,11 +101,11 @@
             </div>
             <div class="slidebar">
               <div class="imgsrev">
-                <img class="img-rev" id="ap1" src="{% static 'myapp/images/anime/Death-notej.jpg' %}" alt="img1">
-                <img class="img-rev" id="ap2" src="{% static 'myapp/images/random-index/AOT.jpg' %}" alt="img2">
-                <img class="img-rev" id="ap3" src="{% static 'myapp/images/anime/cowboy-bebop.jpg' %}" alt="img3">
-                <img class="img-rev" id="ap4" src="{% static 'myapp/images/anime/monster.jpg' %}" alt="img4">
-                <img class="img-rev" id="ap5" src="{% static 'myapp/images/anime/Hunterj.jpg' %}" alt="img5">
+                <img class="img-rev" id="ap1" src="" alt="img1">
+                <img class="img-rev" id="ap2" src="" alt="img2">
+                <img class="img-rev" id="ap3" src="" alt="img3">
+                <img class="img-rev" id="ap4" src="" alt="img4">
+                <img class="img-rev" id="ap5" src="" alt="img5">
               </div>
             </div>
             <div class="rrev-img">
@@ -107,7 +115,7 @@
           <div class="re-view">
             <div class="title">
               <div class="titlechild">
-                <h1 id="Anititle">Attack On Titans</h1>
+                <h1 id="Anititle"></h1>
 
               </div>
             </div>
@@ -336,7 +344,7 @@
           <h3>CopyRights:</h3>
           <a href="https://www.linkedin.com/in/arshath-ahamed-45b34830a/" target="_blank" >Linkedin</a>
       </footer>
-      </div>
+    </div>
     <script src="{% static 'myapp/JS/app.js' %}">
     </script>
     <script src="{% static 'myapp/JS/anime-page.js' %}"></script>

@@ -3,14 +3,12 @@
   .entire-reviewpage {
     position: relative;
     margin: auto;
-    box-shadow: 0px 0px 20px rgb(0, 0, 0);
     max-height: 100%;
+    width: 100vw;
   }
 
   .ani-page-content {
-    padding-top: 5.3rem;
-    height: 58rem;
-    background-color: rgb(40, 40, 40);
+    padding-top: 5.4rem;
   }
   
   .gesture-pop {
@@ -20,72 +18,56 @@
     display: flex;
     align-items: center;
     padding-left: 0.31em;
-    /* position: fixed; */
-    /* top: 5.3rem; */
     z-index: 2;
   }
   
   .button-gesture {
-    width: 1rem;
-    background-color: #5fa45d00;
+    background-color: hsla(118, 28%, 50%, 0);
     border: none;
     font-size: larger;
     font-weight: 600;
   }
   
   .reviewer {
-    width: 100%;
-    height: 96.8%;
     display: grid;
     grid-template-areas:
-      "img img cont"
-      "egg egg egg";
-    grid-template-rows: 1.5fr 1fr;
-    grid-template-columns: 1.5fr 1.5fr 1.2fr;
-  }
-  
-  .rev-images {
-    grid-area: img;
-    display: grid;
-    grid-template-areas: "left center right";
-    grid-template-columns: 0.9fr 10fr 0.9fr;
-    padding: 1rem 0;
-    position: relative;
-    margin: auto;
-  }
+      "img"
+      "cont"
+      "egg";
+    }
+    
+    .rev-images {
+      grid-area: img;
+      display: grid;
+      grid-template-areas: "left center right";
+      padding: 4.8rem 0rem;
+    }
 
   .lrev-img {
     grid-area: left;
     display: flex;
     align-items: center;
-    padding: 0 0.2rem;
+    margin: auto;
   }
   
   .imgsrev {
-    /* overflow: scroll; */
-    width: 48rem;
-    color: white;
     grid-area: center;
     box-sizing: border-box;
-    max-height: 31rem;
-    /* padding: 1rem; */
     border-radius: 0.2rem;
     display: flex;
     align-items: center;
-    justify-content: space-between;
   }
   
   .img-rev {
-    background-color: #111111;
-    box-shadow: 0px 10px 20px #111111;
+    background-color: hsl(0, 0%, 7%);
+    box-shadow: 0px 0px 40px #000000;
+    padding: 0.5rem;
     border-radius: 0.2rem;
     margin: auto;
     height: 28rem;
-    width: 47.9rem;
-    padding: 0.6rem;
-    flex-shrink: 0;
+    min-width: 47.9rem;
+    max-width: 47.9rem;
     transition: transform 0.5s ease-in-out;
-    margin-right: 0.2rem;
     transition: all 1s ease-in;
   }
   
@@ -93,16 +75,17 @@
     grid-area: right;
     display: flex;
     align-items: center;
-    padding: 0 0.2rem;
+    margin: auto;
   }
   
   .buttonright,
   .buttonleft {
-    width: 100%;
+    height: 5rem;
+    width: 5rem;
+    border-radius: 3rem;
     border: none;
-    background-color: hsla(0, 0%, 100%, 0);
-    padding: 0px 0px;
-    font-size: 4.5rem;
+    background-color: hsl(0, 0%, 7%);
+    font-size: 3.5rem;
     font-weight: 500;
     color: hsl(120, 100%, 69%);
     transition: all 0.3s ease-in-out;
@@ -129,7 +112,6 @@
     grid-area: cont;
     background-color: hsl(0, 0%, 7%);
     padding-bottom: 0.8rem;
-    /* box-shadow: -10px 0px 10px hsl(0, 0%, 0%); */
     max-height: 32.5rem;
     display: grid;
     grid-template-areas:
@@ -163,23 +145,6 @@
     font-weight: 300;
   }
 
-  /* .star-rating {
-    direction: rtl;
-    display: inline-flex;
-    font-size: 30px;
-    color: #ffffff56;
-    cursor: pointer;
-  }
-  
-  .star-rating .star:hover,
-  .star-rating .star:hover ~ .star {
-    color: gold;
-  }
-  
-  .star-rating .selected{
-    color: gold;
-  } */
-
   .star {
     font-size: 2rem;
     color: #ccc;
@@ -189,8 +154,6 @@
     color: gold;
   }
   
-  
-
 
   .titlechild h1 {
     padding: 0.2rem 0rem 0rem 0rem;
@@ -204,8 +167,7 @@
   
   .easter-eggs {
     grid-area: egg;
-    background-color: hsl(0, 0%, 7%);
-    height: 22rem;
+    background-color: hsla(0, 0%, 0%, 0.753);
     padding-top: 2rem;
   }
   
@@ -217,23 +179,21 @@
     font-family: "Poppins" , sans-serif;
     font-weight: 500;
     padding-left: 0.3rem;
-    width: 13.5rem;
+    width: 14.5rem;
   }
   
   .part-child-ARP {
-    height: 80%;
-    width: 100%;
     display: flex;
     justify-content: space-between;
-    padding: 1.2rem 0.2rem 0.8rem 2rem;
+    padding: 1.2rem 2rem 0.8rem 5rem;
     overflow-x: scroll;
     overflow-y: hidden;
+    width: 100vw;
   }
   
   .ani-con-ARP {
     display: none;
     height: 100%;
-    width: 10rem;
     background-color: hsla(0, 0%, 0%, 0.919);
     border-radius: 10px;
     padding: 0.6rem;
@@ -258,9 +218,9 @@
   
   .part-child-ARP .homie-i-ARP {
     max-width: 9rem;
-    max-height: 10.6rem;
+    max-height: 11rem;
     min-width: 9rem;
-    min-height: 10.6rem;
+    min-height: 11rem;
     border-radius: 2px;
   }
   
@@ -270,9 +230,7 @@
 
 
   .ani-foot {
-
     height: 7rem;
-    width: 100%;
     background-color: hsl(0, 0%, 0%);
     box-sizing: border-box;
   }

@@ -1,3 +1,17 @@
+// ==================================================================================================================================
+// light and dark mode [common] load part
+
+window.addEventListener("DOMContentLoaded", () => {
+  const savedTheme = localStorage.getItem("theme");
+  if (savedTheme === "light") {
+    document.body.classList.add("light-mode");
+  } else {
+    document.body.classList.remove("light-mode");
+  }
+});
+
+// ==================================================================================================================================
+
 // ===============================================================================================
 
 // {{{{GRID FUNCTION}}}}
@@ -27,7 +41,6 @@ function displayrandom() {
   grid_items.forEach((item, index) => {
     if (tempitems.has(index + 1)) {
       item.classList.add("show"); //shows the element
-      console.log(item)
     } else {
       item.classList.remove("show"); //Hide the item
     }
@@ -54,39 +67,40 @@ function page_selevtor(p1, p2, p3) {
 function settin_thing(className) {
   // Get the settings page element
   const settingsPage = document.querySelector(".setting-page");
+  const pagebg = document.querySelector('.video-overlay')
+    // Get computed style for z-index
+  // const pagebgZIndex = window.getComputedStyle(pagebg).zIndex;
 
-  // Toggle its visibility
-  if (settingsPage.style.display === "none") {
-    settingsPage.style.display = "block";
+    if (settingsPage.classList.contains("show")) {
+    document.body.classList.remove("show");
   } else {
-    settingsPage.style.display = "none";
+    document.body.classList.add("show");
   }
+
 }
+//   // Toggle its visibility
+//   if (settingsPage.style.display === "none") {
+//     settingsPage.style.display = "block";
+//   } else {
+//     settingsPage.style.display = "none";
+//   }
+// }
 
 // ==================================================================================================================================
 // light and dark mode [common]
 // ==================================================================================================================================
 
-// Call this function when the "Light" or "Dark" button is clicked
+// Call this function when the "Light" or "Dark" button is clicked\
 document.querySelector(".light").addEventListener("click", () => {
   document.body.classList.add("light-mode");
+  localStorage.setItem("theme", "light"); // Save choice
 });
 
 document.querySelector(".dark").addEventListener("click", () => {
   document.body.classList.remove("light-mode");
+  localStorage.setItem("theme", "dark"); // Save choice
 });
 
-function cross(button) {
-  const btn = document.querySelector(`.${button}`);
-
-  btn.style.display = "none";
-}
-
-function cross(button) {
-  const btn = document.querySelector(`.${button}`);
-
-  btn.style.display = "none";
-}
 
 // ==================================================================================================================================
 // anime review page slide bar [anime-pages.html]

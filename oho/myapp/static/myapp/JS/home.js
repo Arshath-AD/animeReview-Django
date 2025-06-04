@@ -1,19 +1,9 @@
 document.addEventListener("DOMContentLoaded", function () {
   console.log("JavaScript Loaded");
 
-  // Function to toggle Settings Page visibility
-  window.settin_thing = function (id) {
-    let element = document.querySelector(`.${id}`);
-    element.style.display =
-      element.style.display === "none" || element.style.display === ""
-        ? "block"
-        : "none";
-  };
-
   // Function to close Settings Page
   window.cross = function (id) {
-    let element = document.querySelector(`.${id}`);
-    element.style.display = "none";
+    document.body.classList.remove("show");
   };
 
   // Function to switch between different settings pages
@@ -45,5 +35,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
-  console.log("Script Execution Completed");
+  // console.log("Script Execution Completed");
 });
