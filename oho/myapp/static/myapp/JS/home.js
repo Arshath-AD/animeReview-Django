@@ -1,10 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   console.log("JavaScript Loaded");
 
-  // Function to close Settings Page
-  window.cross = function (id) {
-    document.body.classList.remove("show");
-  };
 
   // Function to switch between different settings pages
   window.page_selevtor = function (show, hide1, hide2) {

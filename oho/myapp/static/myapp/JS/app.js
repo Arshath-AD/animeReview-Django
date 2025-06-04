@@ -66,7 +66,7 @@ function page_selevtor(p1, p2, p3) {
 }
 function settin_thing(className) {
   // Get the settings page element
-  const settingsPage = document.querySelector(".setting-page");
+  const settingsPage = document.querySelector(".events-parent");
   const pagebg = document.querySelector('.video-overlay')
     // Get computed style for z-index
   // const pagebgZIndex = window.getComputedStyle(pagebg).zIndex;
@@ -146,3 +146,19 @@ function showPrevious(...pages) {
 document.addEventListener("DOMContentLoaded", () => {
   showNext("ap1", "ap2", "ap3", "ap4", "ap5", "ap6");
 });
+
+
+  // Function to close Settings Page
+  window.cross = function (id) {
+    document.body.classList.remove("show");
+  };
+
+const overlay = document.querySelector('.video-overlay');
+
+if (overlay) {
+  overlay.addEventListener('click', () => {
+    document.body.classList.remove("show");
+  });
+}
+
+
