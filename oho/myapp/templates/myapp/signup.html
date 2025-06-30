@@ -1,0 +1,92 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up - Anime World</title>
+  <link rel="stylesheet" href="{% static 'myapp/CSS/login.css' %}" />
+  <link rel="icon" href="{% static 'myapp/images/logo-orewa.png' %}" type="image/png" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -2;
+      object-fit: cover;
+      transform: scale(1.25) translateX(10%);
+      transform-origin: center;
+    }
+    .video-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      background-color: hsla(0, 0%, 0%, 0.897);
+    }
+  </style>
+</head>
+<body class="login-body">
+
+  <!-- Video Background -->
+  <video autoplay muted loop class="video-bg">
+    <source src="{% static 'myapp/video/homebg.mp4' %}" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+  <h1>OreWa Nova</h1>
+
+  <!-- Gradient Overlay -->
+  <div class="video-overlay"></div>
+
+  <a class="back-btn" href="{% url 'home' %}">GO BACK</a>
+
+  <div class="login-container">
+    <!-- REGISTER SECTION -->
+    <div class="signin">
+      <section>
+        <h6 class="sec">
+          Already a user?<br />
+          <a href="{% url 'login' %}"><span>Login to your account</span></a>
+        </h6>
+      </section>
+      <h2>SIGN UP</h2>
+
+      {% if form.errors %}
+        <p style="color: red;">Please correct the errors below.</p>
+      {% endif %}
+
+      <form method="post">
+        {% csrf_token %}
+        <div class="input-group">
+          <label for="username">USERNAME</label>
+          <input type="text" name="username" id="username" required />
+        </div>
+        <div class="input-group">
+          <label for="first_name">FIRST NAME</label>
+          <input type="text" name="first_name" id="first_name" required />
+        </div>
+        <div class="input-group">
+          <label for="email">EMAIL</label>
+          <input type="email" name="email" id="email" required />
+        </div>
+        <div class="input-group">
+          <label for="password">PASSWORD</label>
+          <input type="password" name="password" id="password" required />
+        </div>
+        <button type="submit" class="login-btn" name="register">REGISTER</button>
+      </form>
+    </div>
+  </div>
+
+</body>
+</html>

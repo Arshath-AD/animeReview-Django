@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DashBoard</title>
+    <link rel="stylesheet" href="{% static 'myapp/CSS/login.css' %}">
+    <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      overflow: hidden;
+    }
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -2;
+      object-fit: cover;
+      transform: scale(1.25) translateX(10%);
+      transform-origin: center;
+    }
+
+    .video-overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+      background-color: hsla(0, 0%, 0%, 0.897);
+    }
+  </style>
+</head>
+<body class="login-body">
+
+      <!-- Video Background -->
+    <video autoplay muted loop class="video-bg">
+        <source src="{% static 'myapp/video/homebg.mp4' %}" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+    <!-- Gradient Overlay -->
+    <div class="video-overlay"></div>
+
+    <h2>Welcome, {{ user.first_name }}!</h2>
+    <p>Your username: {{ user.username }}</p>
+    <p>Your email: {{ user.email }}</p>
+    <a href="{% url 'logout' %}">Logout</a>
+    <a href="{% url 'home' %}">home</a>
+</body>
+</html>

@@ -130,3 +130,5 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 STATICFILES_DIRS = [
     BASE_DIR / "myapp" / "static",  # Add this if your static files are in a 'static' folder in your project root
 ] 
+
+AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.ModelBackend']

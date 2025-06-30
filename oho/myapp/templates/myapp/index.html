@@ -597,21 +597,53 @@
           </div>
         </div>
       </div>
-      <footer>
-        <div class="left">
-          <h4 class="foot">Copyrights Disclaimer:</h4>
-          <p class="foot">
-            CONTACT:<a
-              href="https://www.linkedin.com/in/arshath-ahamed-45b34830a/"
-              target="_blank"
-              >Linkedin</a
-            >
-          </p>
-        </div>
-        <div class="right">
-          <p class="foot">Arshath ahamed M</p>
-        </div>
-      </footer>
+      <footer class="f-BG">
+          <div class="fWrapper">
+            
+            <div>
+              <h3>Project Info</h3>
+              <ul style="list-style: none;">
+                <li>Framework: Django</li>
+                <li>Database: SQLite</li>
+                <li>Languages: HTML, CSS, JavaScript</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3>Pages</h3>
+              <ul style="list-style: none;">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'anime-pages' %}">Anime review page</a></li>
+                <li><a href="{% url 'index' %}">Leaderboaard</a></li>
+                <li><a href="{% url 'dashboard' %}">DashBoard</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>Developer</h3>
+              <ul style="list-style: none;">
+                <li>Created by: Arshath</li>
+                <li>Email: arshath@example.com</li>
+                <li><a href="https://github.com/Arshath-AD" target="_blank">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/arshath-ahamed-45b34830a/" target="_blank">Linkedin Profile</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>Follow Us</h3>
+              <ul style="list-style: none;">
+                <li><a href="https://github.com/Arshath-AD/animeReview-Django" target="_blank"><img src="{% static 'myapp/images/icons/github.png' %}" alt="github" width="24"></a></li>
+                <li><a href="https://www.djangoproject.com/" target="_blank"><img src="{% static 'myapp/images/icons/Django.png' %}" alt="Django" width="24"></a></li>
+                <li><a href="https://sqlite.org/" target="_blank"><img src="{% static 'myapp/images/icons/sqlite.png' %}" alt="Twitter" width="24"></a></li>
+              </ul>
+            </div>
+            
+          </div>
+          
+          <div style="text-align: center; margin-top: 8rem; color: #b1b1b1; font-weight: 200;">
+            © 2025 Arshath's Anime Ratings. All rights reserved.
+          </div>
+        </footer>
     <script src="{% static 'myapp/JS/app.js' %}"></script>
   </body>
 </html>

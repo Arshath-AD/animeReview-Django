@@ -61,7 +61,16 @@
                   </p>
                   
                 </div>
-                <div class="event-page p3"><h1>Login to use this!!</h1></div>
+                <div class="event-page p3 home-a">
+                  {% if request.user.is_authenticated %}
+                    <h2>Welcome, {{ user.first_name }}!</h2>
+                    <p>Your username: {{ user.username }}</p>
+                    <p>Your email: {{ user.email }}</p>
+                    <a href="{% url 'logout' %}">Logout</a>
+                  {% else %}
+                    <a href="{% url 'login' %}">LOGIN</a>
+                  {% endif %}
+                </div>
               </div>
             </div>
         </div>
@@ -75,8 +84,13 @@
           <div class="pages">
             <ul id="pop-up">
               <li class="home">
-                <p id="home-a" onclick="window.location.href='./login.html'">LOGIN</p>
-                
+                <p id="home-a">
+                  {% if request.user.is_authenticated %}
+                    <a href="{% url 'dashboard' %}">DASHBOARD</a>
+                  {% else %}
+                    <a href="{% url 'login' %}">LOGIN</a>
+                  {% endif %}
+                </p>
               </li>
               <li onclick="settin_thing('events-parent')" class="setting">
                 <p  id="setting-a">SETTINGS</p>
@@ -335,20 +349,53 @@
           </div>
         </div>
         <footer class="f-BG">
-          <div class="left">
-            <h4 class="foot">Copyrights Disclaimer</h4>
-            <p class="foot">
-              CONTACT:<a
-                href="https://www.linkedin.com/in/arshath-ahamed-45b34830a/"
-                target="_blank"
-                >Linkedin</a
-              >
-            </p>
+          <div class="fWrapper">
+            
+            <div>
+              <h3>Project Info</h3>
+              <ul style="list-style: none;">
+                <li>Framework: Django</li>
+                <li>Database: SQLite</li>
+                <li>Languages: HTML, CSS, JavaScript</li>
+              </ul>
+            </div>
+            
+            <div>
+              <h3>Pages</h3>
+              <ul style="list-style: none;">
+                <li><a href="{% url 'home' %}">Home</a></li>
+                <li><a href="{% url 'anime-pages' %}">Anime review page</a></li>
+                <li><a href="{% url 'index' %}">Leaderboaard</a></li>
+                <li><a href="{% url 'dashboard' %}">DashBoard</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>Developer</h3>
+              <ul style="list-style: none;">
+                <li>Created by: Arshath</li>
+                <li>Email: arshath@example.com</li>
+                <li><a href="https://github.com/Arshath-AD" target="_blank">GitHub Profile</a></li>
+                <li><a href="https://www.linkedin.com/in/arshath-ahamed-45b34830a/" target="_blank">Linkedin Profile</a></li>
+              </ul>
+            </div>
+
+            <div>
+              <h3>Follow Us</h3>
+              <ul style="list-style: none;">
+                <li><a href="https://github.com/Arshath-AD/animeReview-Django" target="_blank"><img src="{% static 'myapp/images/icons/github.png' %}" alt="github" width="24"></a></li>
+                <li><a href="https://www.djangoproject.com/" target="_blank"><img src="{% static 'myapp/images/icons/Django.png' %}" alt="Django" width="24"></a></li>
+                <li><a href="https://sqlite.org/" target="_blank"><img src="{% static 'myapp/images/icons/sqlite.png' %}" alt="Twitter" width="24"></a></li>
+              </ul>
+            </div>
+            
           </div>
-          <div class="right">
-            <p class="foot">Arshath ahamed M</p>
+          
+          <div style="text-align: center; margin-top: 8rem; color: #b1b1b1; font-weight: 200;">
+            © 2025 Arshath's Anime Ratings. All rights reserved.
           </div>
         </footer>
+
     </div>
     <script src="{% static 'myapp/JS/app.js' %}"></script>
     <script src="{% static 'myapp/JS/home.js' %}"></script>
