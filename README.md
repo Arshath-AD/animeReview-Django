@@ -18,21 +18,37 @@ Project Structure
 
 
   myproject/
+  
   │── myapp/
+  
   │   ├── static/
+  
   │   │   ├── myapp/
+  
   │   │   │   ├── Data/                # Anime JSON files
+  
   │   │   │   ├── images/              # Anime images
+  
   │   │   │   ├── js/
+  
   │   │   │   │   └── anime-page.js    # Fetch and render anime details
+  
   │   │   │   └── css/
+  
   │   │   │       └── style.css        # Styling (Light/Dark mode)
+  
   │   ├── templates/
+  
   │   │   └── anime-page.html          # Anime detail page template
+  
   │   └── views.py                     # Django views
+  
   │
+  
   ├── db.sqlite3
+  
   ├── manage.py
+  
   └── README.md
 
 Data Source
